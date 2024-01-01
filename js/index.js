@@ -41,16 +41,18 @@ function tx(){
     }
 }
 function fabu(){
-    document.getElementById("fb").style.display='flex';
+  document.getElementById("fb").style.display='flex';
+
   /** 编辑器初始化 */
   const { createEditor, createToolbar } = window.wangEditor
 
   const editorConfig = {
       placeholder: 'Type here...',
-      onChange(editor) {
-        const html = editor.getHtml()
-        console.log('editor content', html)
-        // 也可以同步到 <textarea>
+      MENU_CONF: {
+        uploadImage: {
+          // 小于该值就插入 base64 格式（而不上传），默认为 0
+          base64LimitSize: 512 * 1024 * 1024 // 5kb
+        }
       }
   }
 
