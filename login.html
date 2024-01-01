@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/logo.png" />
+
+    <link rel="bookmark" href="img/logo.png" />
+    <title>者也 - 有问题，上者也</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    
+</head>
+
+<body>
+
+<div id="logo">
+    <img src="img/logo.png" alt="">
+</div>
+
+<div id="content_displayNone" hidden="hidden">
+
+    <img src="images/phoneLogin.jpg" alt="" class="ewm">
+    <div class="img_div"></div>
+    <br>
+    <br>
+    <h2 align="center">扫码登录</h2>
+    <br>
+    <br>
+    <p align="center"><img src="images/image.png"  width="150" height="150"></p>
+    <br>
+    <font size="2.5">
+        <p align="center">打开<a href="#">&nbsp;者也&nbsp;App</a></p>
+    <p align="center">在&nbsp;[&nbsp;我的&nbsp;]&nbsp;页面右上角打开扫一扫</p>
+    </font>
+</div>
+
+</div>
+
+<div id="content">
+    <div id="content_login_select">
+        <span class="button">登录</span>
+        <span class="button chick">注册</span>
+    </div>
+
+    <img src="images/qr-code@2x.2607d448.png" alt="" class="ewm">
+    <div class="img_div"></div>
+
+
+    <div id="content_login_form">
+        <div style="display: none;">
+            <form action="#" method="post" action="denglu.php" onsubmit="return checkForm2()" >
+                <input type="text" name="userName" class="telPhone" id="telephone" placeholder="手机号" onfocus="telFocus(1)" onblur="telBlur(1)" style="height: 42px">
+                <input type="password" name="password" id="pass" placeholder="密码" class="pass" onfocus="passFocus(1)"onblur="passBlur(1)" style="height: 42px"><br>
+                <!--<img id="imgClick" src="images/eye_32px_1148778_easyicon.net.ico" width="20px" height="20px" alt="" class="inputline" onclick="changeInput()">-->
+                <span>
+                    <a href="#">海外手机号登录</a>
+                    <a href="findbackbyp.html">忘记密码？</a><br>
+                </span>
+            
+            </form>
+            <input type="submit" value="登录" id="login_res" onclick="login_test()"  >
+        </div>
+<!---onclick="login_test()"-->
+
+        <div>
+            <form action="#" method="post" action="zhuce.php" onsubmit="return checkForm1()">
+                <input type="tel" name="userName" class="telPhone" placeholder="手机号" onfocus="telFocus(0)" onblur="telBlur(0)" id="phone" minlength="11">
+                <input type="tel" name="userName" class="telPhone" placeholder="用户名" onfocus="telFocus(0)" onblur="telBlur(0)" id="name" minlength="2">
+                <input type="password" name="password" placeholder="密码" class="pass"  id="pwd1" minlength="6">
+                <!--<img id="imgClick" src="images/eye_32px_1148778_easyicon.net.ico" width="20px" height="20px" alt="" class="inputline" onclick="changeInput1()">-->
+                <input type="password" name="password" placeholder="再次确认密码" class="pass"  id="pwd2" minlength="6">
+                <!--<img id="imgClick" src="images/eye_32px_1148778_easyicon.net.ico" width="20px" height="20px" alt="" class="inputline" onclick="changeInput1()">-->
+                <!--<font size="2"><a class="inputline" href="#">获取短信验证码</a></font>-->
+                <span>
+                    <a href="email.html">邮箱注册</a>
+                </span>
+            </form>
+            <input type="submit" value="注册" id="login_res" onclick="register_test();">
+        </div>
+        
+        
+    </div>
+    
+</div>
+
+<div id="content_login_bottom">
+    <div>
+        未注册手机未注册手机验证后自动登录<br>
+        注册即代表同意
+        <a href="#">《者也协议》</a>
+        <a href="#">《隐私保护指引》</a>
+    </div>
+    <div>
+        <a href="#" style="color: blue;">注册机构号</a>
+    </div>
+</div>
+
+<div id="social_contact_login">
+    <span>社交账号登录</span>
+    <div>
+    <a href="#">
+        <img src="images/wechat_128px_1226452_easyicon.net.ico" width="18px" height="18px" alt="">
+        <span style="margin-bottom: 4px">&nbsp;微信</span>
+    </a>
+    <a href="#">
+
+        <img src="images/QQ_128px_1230490_easyicon.net.ico" width="25px" height="25px" alt="">
+        <span>QQ</span>
+    </a>
+    <a href="#">
+
+        <img src="images/Weibo_128px_1230529_easyicon.net.ico" width="25px" height="25px" alt="">
+        <span>微博</span>
+    </a>
+</div>
+</div>
+
+<div id="btn_dow_app">
+    <a href="#">
+        <img src="img/logo.png" alt="">
+        <span>下载者也 App</span>
+    </a>
+</div>
+
+<div id="content_bottom">
+    <div>
+        <a href="#">者也专栏</a>
+        <a href="#">圆桌</a>
+        <a href="#">发现</a>
+        <a href="#">联系我们</a>
+        <a href="#">来者也工作</a>
+        <a href="#">注册机构号</a>
+    </div>
+    <div>
+        <span >© 2019 者也</span>
+        <a href="#">京 ICP 证 110745 号</a>
+        <img src="images/v2-d0289dc0a46fc5b15b3363ffa78cf6c7.png" alt="">
+        <a href="#">京公网安备 11010802010035 号</a>
+        <a href="#">出版物经营许可证</a>
+    </div>
+    <div>
+        <a href="#">侵权举报</a>
+        <a href="#">网上有害信息举报专区</a>
+        <a href="#">儿童色情信息举报专区</a>
+        <span>违法和不良信息举报：010-82716601</span>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+        var telPhoneInputCheck=document.getElementsByClassName("telPhone");
+        var passwordInputCheck=document.getElementsByClassName("pass");
+        var loginMethodChange=document.getElementsByClassName("img_div");
+        var loginPhone=document.getElementById("content_displayNone");
+        var loginPass=document.getElementById("content");
+        var loginPassMore=document.getElementById("content_login_bottom");
+
+    //扫码和密码登录方式切换
+    loginMethodChange[0].onclick=function()
+    {
+        loginPhone.style.setProperty("display","none");
+        loginPass.style.setProperty("display","block");
+        loginPassMore.style.setProperty("display","block");
+    }
+    loginMethodChange[1].onclick=function()
+    {
+        loginPhone.style.setProperty("display","block");
+        loginPass.style.setProperty("display","none");
+        loginPassMore.style.setProperty("display","none");
+    }
+
+
+    //选项卡开始
+    //btn();
+    btn();
+    function btn(){
+                var btn=document.getElementsByClassName('button');
+                var oDiv=document.getElementById('content_login_form');
+                var showDiv=oDiv.getElementsByTagName('div');
+
+                for(var i=0;i<btn.length;i++){
+                    btn[i].index=i;
+                    btn[i].onclick=function(){
+                        for(var i=0;i<btn.length;i++){
+                            btn[i].className="button";
+                            showDiv[i].style.display="none";
+                            telPhoneInputCheck[0].value="";
+                            passwordInputCheck[0].value="";
+                            telPhoneInputCheck[1].value="";
+                            passwordInputCheck[1].value="";
+                        };
+                        btn[this.index].className="button chick";
+                        showDiv[this.index].style.display="block";
+                            telPhoneInputCheck[0].value="";
+                            passwordInputCheck[0].value="";
+                            telPhoneInputCheck[1].value="";
+                            passwordInputCheck[1].value="";
+
+                    };
+                    
+                    
+                };
+            };
+    //密码明文，加密显示事件
+    function changeInput1()
+    {
+        var password=document.getElementById("pass");
+        var imgclick=document.getElementById("imgClick");
+        if(password.getAttribute("type")=="password")
+        {
+            password.setAttribute("type","text");
+            imgclick.setAttribute("src","images/eye_32px_1147862_easyicon.net.ico");
+            
+
+        }else{
+            password.setAttribute("type","password");
+            imgclick.setAttribute("src","images/eye_32px_1148778_easyicon.net.ico");
+
+        }
+    }
+        //账号密码获取焦点和失去焦点事件
+
+        function telFocus(i)
+        {
+            if(telPhoneInputCheck[i].value=="请输入手机号")
+            {
+                telPhoneInputCheck[i].style.setProperty("color","black");
+                telPhoneInputCheck[i].value="";
+            }
+            
+        }
+        function telBlur(i)
+        {
+            if(telPhoneInputCheck[i].value=="")
+            {
+                telPhoneInputCheck[i].style.setProperty("color","black");
+                telPhoneInputCheck[i].value="请输入手机号";
+            }
+        }
+
+        function passFocus(i)
+        {
+            if(passwordInputCheck[i].value=="请输入验证码或密码")
+            {
+                passwordInputCheck[i].style.setProperty("color","black");
+                passwordInputCheck[1].setAttribute("type","password");
+                passwordInputCheck[i].value="";
+            }
+        }
+
+        function passBlur(i)
+        {
+            if(passwordInputCheck[i].value=="")
+            {
+                passwordInputCheck[i].style.setProperty("color","black");
+                passwordInputCheck[1].setAttribute("type","text");
+                passwordInputCheck[i].value="请输入密码";
+            }
+        }
+
+
+        function register_test(){
+            
+            
+           
+            var flag=0;
+            if(checkphone()==1)
+            flag=1;
+            if(checkname()==1)
+            flag=1;
+            if (checkpwd1()==1)
+            flag=1;
+
+
+            var phone = document.getElementById("phone").value;
+            var name = document.getElementById("name").value;
+            var pwd1 = document.getElementById("pwd1").value;
+            var pwd2 = document.getElementById("pwd2").value;
+            if(flag==0){
+                localStorage.setItem("user_"+phone,name+"_"+pwd1);
+                alert("注册成功");
+                document.getElementById("phone").value="";
+                document.getElementById("name").value="";
+                document.getElementById("pwd1").value="";
+                document.getElementById("pwd2").value="";
+            }
+        }//账户密码临时存储到浏览器
+        function checkpwd1(){
+            var pwd1 = document.getElementById("pwd1").value;
+            var pwd2 = document.getElementById("pwd2").value;
+            var flag=0;
+            if(pwd1==""||pwd2==""){
+                alert("注册失败，密码不能为空");
+                flag=1;
+            }
+            else if(pwd1!=pwd2){
+                alert("注册失败，两次密码不一致");
+                flag=1;
+            }
+            var pwd1Length = document.getElementById("pwd1").value.length;
+			//获取输入框的内容
+			var content = document.getElementById("pwd1").value;
+			// 检测名字是否只包含数字、字母
+			var reg = /^(?![\d]+$)(?![a-z]+$)(?![A-Z]+$)[\da-zA-z]{0,25}$/;
+			
+			if (pwd1Length > 16) {
+                alert("注册失败，密码长度过长");
+                flag=1;
+			}
+            if (pwd1Length < 6) {
+                alert("注册失败，密码长度过短");
+                flag=1;
+			}
+			if (!reg.test(content)){
+				alert("注册失败,密码中允许出现数字、大写字母、小写字母，但至少包含其中2种");
+                flag=1;
+			}
+            return flag;
+        }
+
+        
+        function checkname(){
+            var name = document.getElementById("name").value;
+            var flag=0;
+            if(name == ""){
+                alert("注册失败，用户名不能为空");
+                flag=1;
+            }
+            var nameLength = document.getElementById("name").value.length;
+			//获取输入框的内容
+			var content = document.getElementById("name").value;
+			// 检测名字是否只包含数字、字母、汉字
+			var reg = /^[A-Za-z0-9\u4e00-\u9fa5]*$/;
+			
+			if (nameLength > 11) {
+                alert("注册失败，用户名长度过长");
+                flag=1;
+			}
+            if (nameLength < 2) {
+                alert("注册失败，用户名长度过短");
+                flag=1;
+			}
+			if (!reg.test(content)){
+				alert("注册失败,用户名只允许数字、字母");
+                flag=1;
+			}
+            return flag;
+        }
+
+        function checkphone(){
+            var phone = document.getElementById("phone").value;
+            var flag=0;
+            if(phone == ""){
+                alert("注册失败，手机号不能为空");
+                flag=1;
+            }
+			var phoneLength = document.getElementById("phone").value.length;
+			//获取输入框的内容
+			var content = document.getElementById("phone").value;
+			// 检测名字是否只包含数字
+			var reg = /^[0-9 ]*$/;
+			
+			if (phoneLength > 11) {
+                alert("注册失败，手机号长度过长");
+                flag=1;
+			}
+            if (phoneLength < 11) {
+                alert("注册失败，手机号长度过短");
+                flag=1;
+			}
+			if (!reg.test(content)){
+				alert("注册失败,手机号只允许数字");
+                flag=1;
+			}
+            return flag;
+        }
+
+
+
+
+
+        function login_test(){
+        
+            var phone = document.getElementById("telephone").value;
+            var pwd = document.getElementById("pass").value;
+        
+            for(var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                    if(key==("user_"+phone)){
+                        var item=localStorage.getItem(key);
+                        var arr=item.split("_");
+                        var name=arr[0];
+                        var password=arr[1];
+                        if(password==pwd){
+                            localStorage.setItem("loginuser",name);
+                            alert("登录成功");
+                            window.location="index.html";
+
+                        }
+                        else{
+                            alert("密码错误！");
+                        }
+                    }
+            }
+        }//验证登录
+
+
+        /*if(name == ""){
+                
+            }*/
+		//检查密码
+		function checkPassword(){
+			var password = document.getElementById("add_password");
+			var passwordLength = document.getElementById("add_password").value.length;
+			var content = password.value;
+			var spanNode = document.getElementById("user_password");
+			if (passwordLength > 20) {
+				spanNode.innerHTML = "密码过长".fontcolor("black");
+				return false;
+			}
+			if (content != "") {
+				spanNode.innerHTML = "已填".fontcolor("black");
+				return true;
+			}else{
+				spanNode.innerHTML = "密码不能为空".fontcolor("black");
+				return false;
+			}
+		}
+		//检查再次输入的密码
+		function checkUpassword(){
+			var password = document.getElementById("add_password").value;
+			var upassword = document.getElementById("upassword").value;
+			var spanNode = document.getElementById("uupassword");
+			if (upassword != password) {
+				spanNode.innerHTML = "密码不一致".fontcolor("black");
+				return false;
+			}
+			if (upassword != "") {
+				spanNode.innerHTML = "已填".fontcolor("black");
+				return true;
+			}else{
+				spanNode.innerHTML = "请再次输入密码".fontcolor("black");
+				return false;
+			}
+			
+		}
+		    
+		
+		//提交form表单时进行检查
+		function checkForm1(){
+			var add_id = checkName1();
+			var add_password = checkPassword();
+			var upassword = checkUpassword();
+			if (add_name && add_sex && add_age && add_email && add_password && upassword) {
+				return true;
+			}else{
+				return false;
+			}
+		}
+    
+
+    //检查用户名是否填写
+	function checkName2(){
+		var name = document.getElementById("add_name").value;
+		var spanNode = document.getElementById("user_name");
+		if (name != "") {
+			spanNode.innerHTML = "已填".fontcolor("black");
+			return true;
+		}else{
+			spanNode.innerHTML = "用户名不能为空！".fontcolor("black");
+			return false;
+		}
+	}
+    //检查密码是否填写
+    function checkPassword(){
+		var password = document.getElementById("add_password").value;
+		var spanNode = document.getElementById("user_password");
+		if (password != "") {
+				spanNode.innerHTML = "已填".fontcolor("black");
+				return true;
+			}else{
+				spanNode.innerHTML = "请输入密码！".fontcolor("black");
+				return false;
+			}
+	}
+	//点击登录时进行检查
+	function checkForm2(){
+		var name = checkName2();
+		var password = checkPassword();
+		if (name && password) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+</script>
+
+</html>

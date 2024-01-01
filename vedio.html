@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>者也</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+  <div>
+    <div class="LoadingBar  css-uzm3ri"></div>
+    <div>
+      <header role="banner" class="AppHeader css-1x8hcdw">
+        <div><span role="log" aria-live="assertive" style="position: absolute; top: -10000px; left: -10000px;"></span>
+        </div>
+        <div class="AppHeader-inner css-12ygoj">
+          <a href="index.html"><img src="img/logo.png" width="80px"></a>
+          <ul role="tablist" class="Tabs AppHeader-Tabs css-g0ay3v">
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink is-active css-12n8klz" tabindex="0" href="index.html">首页</a>
+            </li>
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink css-12n8klz" tabindex="0" href="index.html">学习</a>
+            </li>
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink css-12n8klz" tabindex="0" href="index.html">会员</a>
+            </li>
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink css-12n8klz" tabindex="0" href="index.html">发现</a>
+            </li>
+          
+          </ul>
+          <div class="css-1acwmmj" id="sousuo">
+            <div class="SearchBar AppHeader-SearchBar css-10fy1q8" role="search">
+               <form class="SearchBar-tool">
+                 <div>
+                   <div class="Popover">
+                      <label class="SearchBar-input css-11bw1mm Input-wrapper Input-wrapper--grey">
+                         <input type="text" maxlength="100" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplete2--1" id="Popover1-toggle" aria-haspopup="true" aria-owns="Popover1-content" class="Input" value="">
+                         <button aria-label="搜索" type="button" class="Button SearchBar-searchButton">
+                           <span style="display: inline-flex; align-items: center;">
+                             <svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Search SearchBar-searchIcon css-1dlt5yv" fill="currentColor"><g fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 18.389c3.875 0 7-3.118 7-6.945 0-3.826-3.125-6.944-7-6.944s-7 3.118-7 6.944 3.125 6.945 7 6.945Zm0 1.5c4.694 0 8.5-3.78 8.5-8.445C20 6.781 16.194 3 11.5 3S3 6.78 3 11.444c0 4.664 3.806 8.445 8.5 8.445Z"></path><path d="M16.47 16.97a.75.75 0 0 1 1.06 0l3.5 3.5a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06Z"></path></g></svg>
+                           </span>
+                         </button>
+                      </label>
+                   </div>
+                 </div>
+               </form>
+               <button type="button" class="Button SearchBar-askButton css-3q84jd Button--primary Button--blue" onclick="fabu()">发布</button>
+            </div>
+         </div>
+          <div class="AppHeader-userInfo" id="touxiang">
+            <div class="Popover">
+              <button aria-label="通知" id="Popover5-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover5-content" type="button" class="Button AppHeader-notifications css-79elbk Button--plain">
+                <span style="display: inline-flex; align-items: center;">
+                  ​<svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Bell css-7dgah8" fill="currentColor"><path fill-rule="evenodd" d="M9.723 21.271c0-.42.34-.76.76-.76h3.043a.76.76 0 0 1 0 1.521h-3.043a.76.76 0 0 1-.76-.76Z" clip-rule="evenodd"></path><path d="M11.153 3.115c0-.618.376-1.115.844-1.115.469 0 .845.499.845 1.115v.183c3.997.369 7.012 4.117 7.024 8.515V17.468h.253a.76.76 0 1 1 0 1.521H3.891a.76.76 0 0 1 0-1.521h.253V11.813c.011-4.392 3.02-8.137 7.009-8.514v-.184Z"></path>
+                  </svg>
+                </span>
+                <div class="css-1m60na">消息</div>
+                </button>
+            </div>
+            <div class="Popover">
+              <button aria-label="私信" id="Popover6-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover6-content" type="button" class="Button AppHeader-messages css-79elbk Button--plain">
+                <span style="display: inline-flex; align-items: center;">
+                  ​<svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Comments css-7dgah8" fill="currentColor"><path fill-rule="evenodd" d="M2 11c0 1.79.553 3.45 1.498 4.82L2.6 18.667a.6.6 0 0 0 .751.753l3.07-.96A8.5 8.5 0 1 0 2 11Zm11.46 9.414c-.457.16-.506.794-.034.904A6.96 6.96 0 0 0 15 21.5c1.148 0 2.422-.31 3.444-.912.357-.217.658-.378 1.043-.252l1.414.42c.357.112.679-.168.574-.546l-.47-1.57a.736.736 0 0 1 .05-.632c.602-1.108.945-2.32.945-3.498 0-1.07-.248-2.11-.7-3.046-.21-.435-.815-.25-.872.23-.47 3.954-3.211 7.394-6.968 8.72Z" clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <div class="css-1m60na">私信</div>
+              </button>
+            </div>
+            <div class="AppHeader-profile">
+              <div class="Popover AppHeader-menu">
+                <button id="Popover3-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover3-content" type="button" class="Button AppHeader-profileEntry Button--plain" onclick="tx()">
+                  <img class="Avatar AppHeader-profileAvatar css-1tzrnvf" src="https://picx.zhimg.com/v2-d4828838906ca56e2797425e63bbcd25_l.jpg?source=32738c0c" srcset="https://picx.zhimg.com/v2-d4828838906ca56e2797425e63bbcd25_l.jpg?source=32738c0c 2x" alt="点击打开子矣的主页">
+                </button>
+              </div>   
+            </div>
+          </div>
+          <div class="AppHeader-userInfo" id="anniu">
+            <div class="AppHeader-profile">
+              <div>
+                <button type="button" class="Button css-jmxm1g" onclick="gotologin();">登录/注册</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+    </div>
+    <div>
+      <span role="log" aria-live="assertive" style="position: absolute; top: -10000px; left: -10000px;">
+      </span>
+    </div>
+    <main role="main" class="App-main">
+      <div class="Topstory">
+        <div></div>
+        <div class="Topstory-container">
+          <div class="Topstory-mainColumn">
+            <div class="Topstory-mainColumnCard">
+              <div class="Card Topstory-noMarginCard Topstory-tabCard">
+                <nav class="TopstoryTabs Topstory-tabs">
+                  <a tabindex="0" aria-controls="Topstory-recommend" class="TopstoryTabs-link Topstory-tabsLink" data-za-detail-view-id="9122" data-za-extra="{&quot;button&quot;:{&quot;text&quot;:&quot;推荐&quot;}}" href="index.html">推荐</a>
+                  <a tabindex="0" aria-controls="Topstory-hot" class="TopstoryTabs-link Topstory-tabsLink" data-za-detail-view-id="9122" data-za-extra="{&quot;button&quot;:{&quot;text&quot;:&quot;热榜&quot;}}" href="hot.html">热榜</a>
+                  <a tabindex="0" aria-controls="Topstory-zvideo" class="TopstoryTabs-link Topstory-tabsLink is-active" data-za-detail-view-id="9122" data-za-extra="{&quot;button&quot;:{&quot;text&quot;:&quot;视频&quot;}}" href="vedio.html">视频</a>
+                </nav>
+                <div>
+                  <div class="Sticky"></div>
+                </div>
+              </div>
+              <div id="TopstoryContent" class="Topstory-content">
+                <div class="1j5d3ll" role="list">
+                  <div class="css-yhjwoe">
+                    <div class="css-1tane06">
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.zhihu.com/zvideo/1467914035262304256?utm_source=pc_tab">
+                        <div class="css-rsp9y2">
+                          <img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pic1.zhimg.com/v2-9386b38f676414a32661bdfe86f6afaa_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);">
+                          <div class="css-1p896vv">
+                            <div class="css-zkfaav">
+                              <svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg>
+                              <div class="css-18b1ycz">232 万播放</div>
+                            </div>
+                            <div class="css-vurnku">6:19</div>
+                          </div>
+                          <div class="css-1vqc4a8" style="opacity: 0.03;"></div>
+                        </div>
+                      </a>
+                      <h2 class="css-tfs9zi">
+                        <a title="1994年春晚小品《打扑克》侯耀文、黄宏 经典演出" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1467914035262304256?utm_source=pc_tab">1994年春晚小品《打扑克》侯耀文、黄宏 经典演出</a>
+                      </h2>
+                      <div class="css-vylitd">
+                        <a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/YangQue-LiShangru">
+                          <div class="css-1mndrjl">
+                            <img class="Avatar css-xw7sv2" src="https://pica.zhimg.com/v2-4cb0ae6378415fd7e4abfd532f7b155d_l.jpg?source=12a79843" srcset="https://pica.zhimg.com/v2-4cb0ae6378415fd7e4abfd532f7b155d_l.jpg?source=12a79843 2x">
+                          </div>
+                          <div class="css-1nne2a7">阳阙</div>
+                        </a>
+                        <div class="css-1e2gfvw">热评满满</div>
+                        <div class="Popover css-17u5rh9">
+                          <div id="Popover57-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover57-content" class="css-vurnku">
+                            <svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path>
+                              <mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path>
+                              </mask>
+                              <g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="css-1tane06"><a target="_blank" rel="noopener noreferrer" href="/zvideo/1240708303371345920?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pic1.zhimg.com/v2-722d725b993ce32dbdad92b0c2a6d71b_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">853 万播放</div></div><div class="css-vurnku">6:47</div></div><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="学渣的绝地求生！如何快速肝出一篇优秀的学术论文？" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1240708303371345920?utm_source=pc_tab">学渣的绝地求生！如何快速肝出一篇优秀的学术论文？</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/bi-xiao-tian-99"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://pic1.zhimg.com/v2-d94579f978d5ebae54c6f2d1cb55b3d1_l.jpg?source=12a79843" srcset="https://pic1.zhimg.com/v2-d94579f978d5ebae54c6f2d1cb55b3d1_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">毕导</div></a><div class="css-1e2gfvw">超多赞同</div><div class="Popover css-17u5rh9"><div id="Popover58-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover58-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                    <div class="css-cazg48"><a target="_blank" rel="noopener noreferrer" href="/zvideo/1336376571020800000?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pic1.zhimg.com/v2-f906394c6c25ce2f3f0678b9b2137d9a_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">88.3 万播放</div></div><div class="css-vurnku">8:56</div></div><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="【反面教材】都是坑！教科书上教的那些不礼貌日语" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1336376571020800000?utm_source=pc_tab">【反面教材】都是坑！教科书上教的那些不礼貌日语</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/qiu-shan-yao-ping"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://pic1.zhimg.com/v2-30ccffa8fbe54da8bf065a80b91ceec8_l.jpg?source=12a79843" srcset="https://pic1.zhimg.com/v2-30ccffa8fbe54da8bf065a80b91ceec8_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">秋山燿平</div></a><div class="Popover css-17u5rh9"><div id="Popover59-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover59-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                    <div class="css-1tane06"><a target="_blank" rel="noopener noreferrer" href="/zvideo/1396968723111038976?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pica.zhimg.com/v2-63210af7bc1326f3e319710df6c93ee6_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">746 万播放</div></div><div class="css-vurnku">4:21</div></div><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="千万不要随便回复网友的评论" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1396968723111038976?utm_source=pc_tab">千万不要随便回复网友的评论</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/panda"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://picx.zhimg.com/v2-556de11bb846eb048ac0302d930c2c81_l.jpg?source=12a79843" srcset="https://picx.zhimg.com/v2-556de11bb846eb048ac0302d930c2c81_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">天才小熊猫</div></a><div class="Popover css-17u5rh9"><div id="Popover60-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover60-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                    <div class="css-1tane06"><a target="_blank" rel="noopener noreferrer" href="/question/397700286/answer/2070715014?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://picx.zhimg.com/v2-7d85669898e408416a980d2a793dcc9a_640w.jpg?source=382ee89a" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">251 万播放</div></div><div class="css-vurnku">5:14</div></div><svg width="64" height="18" viewBox="0 0 64 18" class="css-v0jgcu" fill="none"><path fill="url(#id-1288242383-a)" d="M0 4a4 4 0 0 1 4-4h60v13a5 5 0 0 1-5 5H0V4Z" opacity=".9"></path><path fill="#FEFEFE" d="M22.775 13.82c-.352.217-.65.203-.894-.04-.216-.38-.162-.691.163-.935 1.923-1.03 2.857-2.532 2.803-4.51.027-.297.04-.798.04-1.503.082-.352.271-.541.57-.568.378.027.568.216.568.568 0 .677-.013 1.165-.04 1.463a21.61 21.61 0 0 1-.204 1.666h.122c.325.027.501.203.528.528v1.706c-.027.352.109.514.407.487h.284c.325 0 .501-.162.528-.487 0-.108.027-.352.081-.731.082-.352.298-.501.65-.447.298.081.42.298.366.65 0 .406-.04.731-.122.975-.108.731-.569 1.083-1.381 1.056h-.69c-.786.027-1.179-.406-1.179-1.3v-1.219c-.406.867-1.273 1.747-2.6 2.64Zm.65-3.088c-.325-.027-.515-.216-.569-.568V5.289c.027-.488.271-.745.732-.772h3.818c.46.027.704.284.732.772v4.753c-.028.352-.217.541-.57.569-.351-.028-.54-.217-.568-.57V5.899c0-.162-.081-.244-.244-.244h-2.518c-.163 0-.244.082-.244.244v4.266c-.054.325-.244.514-.569.568Zm-3.737-.04c-.352.19-.623.149-.813-.122-.162-.38-.108-.677.163-.894.758-.569 1.38-1.313 1.868-2.234.055-.136.014-.203-.121-.203h-1.382c-.298-.027-.46-.203-.487-.528.027-.325.19-.502.487-.529h2.275c.325.027.501.204.528.529 0 .352-.08.69-.243 1.015-.19.406-.407.772-.65 1.097v.284l.08-.08c.217-.163.434-.15.65.04.163.135.38.365.65.69.163.244.15.474-.04.691-.243.19-.474.176-.69-.04-.271-.326-.488-.57-.65-.732v3.778c-.027.352-.203.542-.528.569-.353-.027-.542-.217-.57-.569v-3.29l-.527.528Zm1.543-4.835c-.298.163-.555.109-.772-.162a.941.941 0 0 1-.121-.203 16.74 16.74 0 0 0-.325-.528c-.19-.325-.136-.57.162-.732.27-.162.515-.135.731.082.027.054.082.149.163.284.162.217.27.38.325.488.162.297.108.555-.163.771ZM34.394 5.573c-.298-.027-.46-.217-.488-.569.027-.298.19-.46.488-.487H38.7c.298.027.46.203.488.528-.028.325-.19.5-.488.528h-1.666l-.243.975h1.381c.433 0 .65.23.65.69v3.982c0 .298-.163.447-.488.447-.325-.027-.5-.176-.528-.447V7.807c0-.162-.067-.23-.203-.203h-2.112c-.163-.027-.244.04-.244.203v3.372c-.027.271-.19.42-.487.447-.325 0-.488-.149-.488-.447V7.24c0-.46.23-.691.69-.691h.65l.204-.975h-1.422Zm-4.672 2.844c-.298-.027-.46-.19-.488-.488.028-.325.19-.5.488-.528h.162V5.33c.028-.27.19-.42.488-.447.298.027.46.176.488.447v2.072h.771V4.517c.027-.271.19-.42.488-.447.325.027.5.176.528.447v.894h.731c.298.027.46.19.488.487-.027.298-.19.46-.488.488h-.731V7.4h.894c.298.027.46.203.487.528-.027.298-.19.46-.487.488h-3.819Zm4.59 5.484c-.351.163-.622.108-.812-.162-.135-.352-.04-.61.285-.772 1.625-.542 2.37-1.666 2.234-3.372V8.457c0-.298.162-.446.487-.446.298.027.46.176.488.446v1.22a7.5 7.5 0 0 1-.163 1.624l.122.04c.244.217.69.556 1.34 1.016.326.244.556.42.691.529.217.243.244.5.082.771-.271.271-.528.312-.772.122a90.284 90.284 0 0 1-.813-.69 48.83 48.83 0 0 1-1.015-.854c-.434.65-1.151 1.206-2.153 1.666Zm-4.102 0c-.353.108-.596.027-.732-.244-.135-.325-.054-.582.244-.771.975-.434 1.747-.989 2.316-1.666-.027.027-.082.04-.163.04-.325 0-.487-.148-.487-.446V9.067c.027-.271.19-.42.487-.447.325.027.501.176.528.447v1.747c.244-.352.474-.745.69-1.178.11-.244.326-.325.65-.244.245.19.312.42.204.69-.84 1.76-2.085 3.034-3.738 3.82Zm-.529-2.316c-.27-.162-.352-.379-.243-.65.19-.352.406-.853.65-1.503.108-.243.311-.338.609-.284.244.108.338.311.284.61-.162.487-.392 1.029-.69 1.624-.109.244-.312.312-.61.204ZM40.975 13.617c-.542-.027-.826-.312-.853-.853V5.492c.054-.488.339-.759.853-.813h7.272c.542.027.826.298.853.813v7.272c-.054.514-.338.799-.853.853h-7.272Zm2.275-2.56c-.514 0-.772-.27-.772-.812V7.767c.027-.515.285-.786.772-.813h2.722c.515 0 .772.271.772.813v2.478c-.027.514-.285.785-.772.812H43.25Zm2.072-1.056c.217 0 .325-.108.325-.325V8.295c0-.19-.108-.284-.325-.284H43.9c-.217 0-.325.094-.325.284v1.381c0 .217.108.325.325.325h1.422Zm2.194 2.519c.244 0 .365-.122.365-.366V6.101c0-.217-.121-.325-.365-.325h-5.81c-.216-.027-.325.081-.325.325v6.053c0 .244.109.366.325.366h5.81ZM50.888 10.164c-.434.08-.718-.014-.853-.285-.082-.406.027-.677.325-.812 1.543-.46 2.79-1.084 3.737-1.869.406-.325.731-.474.975-.447h.081c-.19-.244-.19-.474 0-.69.325-.407.664-.975 1.016-1.707.108-.298.338-.42.69-.365.353.162.488.379.407.65l-.122.243c-.027.027-.04.055-.04.082h2.355c.298.027.46.19.488.487-.027.325-.19.501-.488.528h-1.828c.054 0 .15.027.285.082l.04.04c.244.325.42.542.528.65.19.244.15.474-.121.69-.271.19-.515.15-.732-.121a5.68 5.68 0 0 1-.528-.61c-.162-.27-.135-.487.081-.65.028 0 .041-.013.041-.04a.36.36 0 0 1 .163-.04h-.853c-.163.243-.325.46-.488.65a.65.65 0 0 1-.487.284l.325.162a.635.635 0 0 0 .162.122c.92.785 2.113 1.368 3.575 1.747.352.162.46.433.325.812-.135.298-.393.393-.772.285a9.372 9.372 0 0 1-1.869-.772l.041.04v.082c-.027.244-.176.379-.447.406h-3.778c-.27-.027-.42-.162-.447-.406-.217.108-.555.257-1.015.447-.353.135-.61.243-.772.325Zm1.422 3.412c-.488 0-.745-.257-.772-.772V11.22c.027-.488.284-.731.772-.731h5.443c.488 0 .731.243.731.73v1.585c0 .515-.243.772-.73.772H52.31Zm-1.3-6.337c-.298.216-.57.203-.813-.041-.217-.27-.203-.542.04-.812.57-.515 1.03-1.179 1.382-1.991.162-.325.42-.447.772-.366.325.109.447.325.365.65l-.04.082c0 .027-.04.094-.122.203h2.112c.298.027.46.19.488.487-.027.298-.19.46-.488.488h-2.64c-.298.46-.65.893-1.056 1.3Zm6.012 5.321c.19 0 .284-.08.284-.243v-.61c0-.162-.094-.243-.284-.243h-3.981c-.19 0-.285.08-.285.243v.61c0 .162.095.243.285.243h3.981ZM54.95 7.89c-.515.406-1.016.758-1.503 1.056h3.29a9.218 9.218 0 0 1-1.503-1.056c-.08-.082-.176-.082-.284 0Zm-1.462-.447c-.298.162-.556.122-.772-.122-.163-.19-.298-.352-.407-.488-.19-.243-.176-.474.041-.69.298-.163.555-.136.772.081.054.027.135.108.244.244.108.135.176.23.203.284.19.217.162.447-.081.69Z"></path><path fill="#FEFEFE" fill-rule="evenodd" d="M14.236 4.2H6.564c-.892 0-1.215.093-1.54.267-.327.175-.583.43-.757.756C4.093 5.55 4 5.873 4 6.764v4.472c0 .892.093 1.215.267 1.54.174.327.43.583.756.757.326.174.65.267 1.54.267h7.673c.892 0 1.215-.093 1.54-.267.327-.174.583-.43.757-.756.174-.326.267-.65.267-1.54V6.763c0-.892-.093-1.215-.267-1.54a1.817 1.817 0 0 0-.756-.757c-.326-.174-.65-.267-1.54-.267Zm-5.112 7.088a.427.427 0 0 1-.156.03c-.1 0-.18-.037-.24-.109a.436.436 0 0 1-.088-.286V7.08a.43.43 0 0 1 .089-.285.295.295 0 0 1 .239-.106c.055 0 .107.01.156.029.049.019.1.044.156.075l3.188 1.845a.941.941 0 0 1 .24.177.278.278 0 0 1 .066.187.278.278 0 0 1-.067.187.982.982 0 0 1-.24.18L9.28 11.21a1.031 1.031 0 0 1-.156.078Z" clip-rule="evenodd"></path><defs><linearGradient id="id-1288242383-a" x1="0" x2="62.287" y1="17.6" y2="12.597" gradientUnits="userSpaceOnUse"><stop stop-color="#FF9607"></stop><stop offset="1" stop-color="#FF5107"></stop></linearGradient></defs></svg><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="你看过哪些堪称「神配音」的视频？" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/question/397700286/answer/2070715014?utm_source=pc_tab">你看过哪些堪称「神配音」的视频？</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/meng-long-a"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://picx.zhimg.com/v2-645fcf66c70b4c79357c0bbbcad67a70_l.jpg?source=12a79843" srcset="https://picx.zhimg.com/v2-645fcf66c70b4c79357c0bbbcad67a70_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">淮秀帮</div></a><div class="Popover css-17u5rh9"><div id="Popover61-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover61-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                    <div class="css-cazg48"><a target="_blank" rel="noopener noreferrer" href="/zvideo/1230965391927128064?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pic1.zhimg.com/v2-978d7c031df1d1a929f21c76cb9264a6_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">2843 万播放</div></div><div class="css-vurnku">3:07</div></div><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="本视频含有大量偏见，请摘下有色眼镜观看。" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1230965391927128064?utm_source=pc_tab">本视频含有大量偏见，请摘下有色眼镜观看。</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/ren-sheng-hui-da-ji"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://pica.zhimg.com/v2-f96e2e70e04ff3c397bae569e3d730d5_l.jpg?source=12a79843" srcset="https://pica.zhimg.com/v2-f96e2e70e04ff3c397bae569e3d730d5_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">人生回答机</div></a><div class="Popover css-17u5rh9"><div id="Popover62-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover62-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                    <div class="css-1tane06"><a target="_blank" rel="noopener noreferrer" href="/zvideo/1360274098560651264?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pic1.zhimg.com/v2-e71f4159e2d47720027f5acdfb2031f3_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">41.5 万播放</div></div><div class="css-vurnku">9:38</div></div><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="经典小品《装修》：黄宏砸墙名场面，经典之作，看一遍笑一遍" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1360274098560651264?utm_source=pc_tab">经典小品《装修》：黄宏砸墙名场面，经典之作，看一遍笑一遍</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/liao-zhu-wei-shi-2"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://picx.zhimg.com/v2-2bdfe594ac248b36c7a3ce9f1a8a9fd3_l.jpg?source=12a79843" srcset="https://picx.zhimg.com/v2-2bdfe594ac248b36c7a3ce9f1a8a9fd3_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">辽宁卫视</div></a><div class="Popover css-17u5rh9"><div id="Popover63-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover63-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                    <div class="css-1tane06"><a target="_blank" rel="noopener noreferrer" href="/zvideo/1530895226419449856?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pic1.zhimg.com/v2-87c598dcebc713f69e295dfd4bf0d9f5_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">111 万播放</div></div><div class="css-vurnku">9:13</div></div><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="信号处理，图像压缩，听歌识曲，为什么傅里叶的名字无处不在？" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1530895226419449856?utm_source=pc_tab">信号处理，图像压缩，听歌识曲，为什么傅里叶的名字无处不在？</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/chai-ping-jun-80"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://pica.zhimg.com/v2-0f04934a5483795ee5fd020c24728803_l.jpg?source=12a79843" srcset="https://pica.zhimg.com/v2-0f04934a5483795ee5fd020c24728803_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">差评</div></a><div class="Popover css-17u5rh9"><div id="Popover64-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover64-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                    <div class="css-cazg48"><a target="_blank" rel="noopener noreferrer" href="/zvideo/1582477729378820096?utm_source=pc_tab"><div class="css-rsp9y2"><img alt="" class="VideoItem-posterImg css-1gknhj2 loaded objectFitCover" loading="lazy" src="https://pica.zhimg.com/v2-a1834638334f49fd93d3c53d9af24fe3_640w.jpg?source=12a79843" style="transform: translateX(-50%) translateY(-50%) scale(1) translateZ(0px);"><div class="css-1p896vv"><div class="css-zkfaav"><svg width="14" height="14" viewBox="0 0 14 14" class="css-1rioglu" fill="none"><path stroke="#fff" stroke-width="1.2" d="M4.717 11.474c.21 0 .416-.058.595-.168l5.433-3.347a1.134 1.134 0 0 0-.002-1.931L5.311 2.689a1.134 1.134 0 0 0-1.727.966v6.686c0 .626.507 1.133 1.133 1.133Z"></path></svg><div class="css-18b1ycz">7.9 万播放</div></div><div class="css-vurnku">3:07</div></div><div class="css-1vqc4a8" style="opacity: 0.03;"></div></div></a><h2 class="css-tfs9zi"><a title="歌曲名最后的英文后缀都是什么意思？" target="_blank" rel="noopener noreferrer" class="css-1bj56ke" href="/zvideo/1582477729378820096?utm_source=pc_tab">歌曲名最后的英文后缀都是什么意思？</a></h2><div class="css-vylitd"><a target="_blank" rel="noopener noreferrer" class="css-70qvj9" href="/people/xk1017"><div class="css-1mndrjl"><img class="Avatar css-xw7sv2" src="https://picx.zhimg.com/v2-363c63093330908722c966a991508037_l.jpg?source=12a79843" srcset="https://picx.zhimg.com/v2-363c63093330908722c966a991508037_l.jpg?source=12a79843 2x"></div><div class="css-1nne2a7">侃哥侃英语</div></a><div class="Popover css-17u5rh9"><div id="Popover65-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover65-content" class="css-vurnku"><svg width="16" height="16" viewBox="0 0 16 17" class="css-1yceefw" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path><mask id="id-1690502596-a" width="12" height="3" x="2" y="7" maskType="alpha" maskUnits="userSpaceOnUse"><path fill="#fff" fill-rule="evenodd" d="M4.667 8.5A1.333 1.333 0 1 1 2 8.5a1.333 1.333 0 0 1 2.667 0Zm4.666 0a1.333 1.333 0 1 1-2.666 0 1.333 1.333 0 0 1 2.666 0Zm3.334 1.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666Z" clip-rule="evenodd"></path></mask><g mask="url(#id-1690502596-a)"><path fill="#8590A6" d="M0 .5h16v16H0z"></path></g></svg></div></div></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="css-1qyytj7">
+            <a aria-label="边栏锚点" aria-keyshortcuts="Shift+S" class="css-cejtq2"></a>
+            <div class="css-1oy4rvw" style="top:0"><div class="Card GlobalSideBar-category" role="complementary" aria-label="分类入口">
+              <ul class="GlobalSideBar-categoryList">
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="/lives" target="_blank" title="Live" style="color:#ffcf00" data-za-not-track-link="true" type="button" class="Button Button--plain">
+                    <span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Live" fill="currentColor"><path d="m13.693 10.354 1.634-7.542c.195-.901-.16-1.083-.798-.39l-9.18 9.97c-.638.693-.377 1.254.582 1.254h5.376l-1.634 7.542c-.195.901.16 1.083.798.39l9.18-9.97c.638-.693.377-1.254-.582-1.254h-5.376Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">Live</span>
+                  </a>
+                </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="/pub/" target="_blank" title="书店" style="color:#43d480" data-za-not-track-link="true" type="button" class="Button Button--plain">
+                      <span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Ebook" fill="currentColor"><path fill-rule="evenodd" d="M16 17.649V2.931a.92.92 0 0 0-.044-.283.943.943 0 0 0-1.183-.604L4.655 5.235A.932.932 0 0 0 4 6.122v14.947c0 .514.421.931.941.931H19.06c.52 0 .941-.417.941-.93V7.292a.936.936 0 0 0-.941-.931h-.773v12.834a.935.935 0 0 1-.83.924L6.464 21.416c-.02.002 2.94-.958 8.883-2.881a.932.932 0 0 0 .653-.886Z" clip-rule="evenodd"></path></svg></span><span class="GlobalSideBar-categoryLabel">书店</span>
+                    </a>
+                  </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="/roundtable" target="_blank" title="圆桌" style="color:#0066FF" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Org" fill="currentColor"><path d="M10.786 8.41a8.938 8.938 0 0 0-3.968-2.528c-.305-1.719.814-3.337 2.442-3.741 1.221-.405 2.646.101 3.46 1.011 1.045 1.38.915 3.64.814 4.348-.102 1.315-1.221 3.034-1.323 3.135-.305-.809-.814-1.517-1.425-2.225Zm-2.442 2.832c-1.526.202-3.052 1.01-4.171 2.123-1.12-.404-1.934-1.314-2.137-2.427-.316-2.427 1.526-3.64 2.849-3.842 1.628-.372 2.849.505 4.07 1.415 1.146 1.012 2.035 2.63 2.035 2.73-.916-.202-1.832-.1-2.646 0Zm4.986.303c.509-.607.931-1.585 1.12-2.225.318-1.039.61-3.134.203-4.651 1.323-1.011 3.154-1.011 4.477.303 1.235 1.146 1.018 2.933.814 3.438-.663 1.581-1.933 2.326-3.256 2.832-1.221.404-3.256.303-3.358.303Zm-2.645 1.011c-.51.607-.916 1.416-1.221 2.326-.407 1.314-.643 3.06-.102 4.55-1.323 1.011-3.256 1.011-4.477-.202-1.198-1.124-1.018-2.933-.814-3.438.599-1.605 1.933-2.326 3.256-2.831.916-.304 3.256-.405 3.358-.405Zm9.259-1.82c1.018.404 1.933 1.315 2.035 2.427.233 2.57-1.526 3.64-2.849 3.842-1.526 0-2.85-.505-4.07-1.415-1.018-.81-2.035-2.528-2.035-2.63.916.203 1.831.102 2.645 0 1.628-.404 3.053-1.112 4.274-2.224Zm-6.716 4.854c1.065 1.08 2.442 2.022 4.07 2.528.306 1.719-.814 3.235-2.442 3.741-1.22.404-2.645-.101-3.46-1.011-1.1-1.481-1.017-3.54-.915-4.247.102-1.315 1.221-3.034 1.323-3.135.305.708.721 1.44 1.424 2.124Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">圆桌</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="//zhuanlan.zhihu.com" target="_blank" title="专栏" style="color:#0f88eb" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Edit" fill="currentColor"><path d="m7.841 20.043-4.328 1.18a.6.6 0 0 1-.737-.736l1.18-4.324a1.2 1.2 0 0 1 .314-.539l8.094-7.995a.9.9 0 0 1 1.268.003l2.736 2.736a.9.9 0 0 1 .004 1.268l-7.196 7.296-.802.802a1.2 1.2 0 0 1-.533.31ZM19.703 4.81l-.514-.513a2.542 2.542 0 0 0-3.595 0l-.999 1.067a.9.9 0 0 0 .02 1.252l2.77 2.768a.9.9 0 0 0 1.25.02l1.068-.999a2.542 2.542 0 0 0 0-3.594Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">专栏</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="/consult" target="_blank" title="付费咨询" style="color:#5478f0" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Infinity" fill="currentColor"><path fill-rule="evenodd" d="M2 5.4A2.4 2.4 0 0 1 4.4 3h15.2A2.4 2.4 0 0 1 22 5.4v10.5a2.4 2.4 0 0 1-2.4 2.4h-2.208l-.24 2.878a.8.8 0 0 1-1.387.475L12.692 18.3H4.4A2.4 2.4 0 0 1 2 15.9V5.4Zm8.758 1.849a.75.75 0 0 0-1.115 1.003l1.607 1.786v.462h-1.5a.75.75 0 0 0 0 1.5h1.5v1.75a.75.75 0 0 0 1.5 0V12h1.5a.75.75 0 0 0 0-1.5h-1.5v-.462l1.607-1.786a.75.75 0 0 0-1.115-1.003L12 8.629l-1.242-1.38Z" clip-rule="evenodd"></path></svg></span><span class="GlobalSideBar-categoryLabel">付费咨询</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="/wiki" target="_blank" title="百科" style="color:#5868D1" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--KnowledgeBase" fill="currentColor"><path d="M21 9.749v9.91c0 .74-.604 1.341-1.35 1.341H4.35C3.604 21 3 20.4 3 19.659V9.319c0-.503.283-.963.733-1.193l4.892-2.5V3.341c0-.74.604-1.341 1.35-1.341.267 0 .527.078.749.225l9.675 6.408c.375.249.601.668.601 1.116ZM8.297 8.307 5.372 9.802A.223.223 0 0 0 5.25 10v8.54c0 .124.1.224.225.224h8.586a.223.223 0 0 0 .124-.41l-4.959-3.259a1.339 1.339 0 0 1-.601-1.116V8.506a.224.224 0 0 0-.328-.199Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">百科</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="Card" role="complementary" aria-label="更多分类入口">
+              <ul class="GlobalSideBar-navList">
+                <li class="GlobalSideBar-navItem GlobalSideBar-starItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/collections/mine"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Star GlobalSideBar-navIcon" fill="currentColor"><path d="M10.484 3.307c.673-1.168 2.358-1.168 3.032 0l2.377 4.122a.25.25 0 0 0 .165.12l4.655.987c1.319.28 1.84 1.882.937 2.884l-3.186 3.535a.25.25 0 0 0-.063.193l.5 4.733c.142 1.34-1.222 2.33-2.453 1.782l-4.346-1.938a.25.25 0 0 0-.204 0l-4.346 1.938c-1.231.549-2.595-.442-2.453-1.782l.5-4.733a.25.25 0 0 0-.064-.193L2.35 11.42c-.903-1.002-.382-2.604.937-2.884l4.655-.987a.25.25 0 0 0 .164-.12l2.378-4.122Z"></path></svg><span class="GlobalSideBar-navText">我的收藏</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-questionListItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/people/81f67a12164bfc21f0924bc9c38ff656/following/questions"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--HelpBubble GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M5.088 1.968c.323-.044.72-.044 1.153-.044h11.518c.433 0 .83 0 1.152.044.356.047.732.16 1.04.469.31.309.422.685.47 1.04.043.323.043.72.043 1.153v13.232c0 .433 0 .83-.043 1.152-.048.356-.16.732-.47 1.04-.308.31-.684.422-1.04.47-.322.043-.72.043-1.152.043h-3.796l-3.932 2.857c-.115.084-.26.19-.397.26-.158.083-.467.207-.827.071-.359-.135-.509-.432-.573-.6-.055-.143-.094-.318-.125-.458l-.477-2.13H6.24c-.433 0-.83 0-1.153-.043-.355-.048-.73-.16-1.04-.47-.309-.308-.421-.684-.47-1.04-.042-.322-.042-.72-.042-1.152V4.63c0-.433 0-.83.043-1.153.048-.355.16-.731.47-1.04.308-.31.684-.422 1.04-.47Zm5.827 8.93c0-.095 0-.142.029-.171.03-.03.076-.03.17-.03h1.01a1.63 1.63 0 0 0 1.5-1.629 1.63 1.63 0 0 0-1.626-1.634c-.832 0-1.531.655-1.616 1.469-.011.102-.016.153-.045.178-.028.026-.075.026-.168.026H8.947c-.095 0-.142 0-.172-.031s-.027-.077-.022-.168C8.847 7.201 10.27 5.8 11.998 5.8a3.26 3.26 0 0 1 3.25 3.268 3.264 3.264 0 0 1-2.7 3.222c-.041.007-.062.01-.074.024-.012.014-.012.035-.012.076v.797c0 .094 0 .141-.029.17-.03.03-.076.03-.17.03h-1.148c-.095 0-.142 0-.171-.03-.03-.029-.03-.076-.03-.17v-2.29Zm-.31 4.05c0-.094 0-.141.03-.17.029-.03.076-.03.17-.03h1.922c.094 0 .141 0 .17.03.03.029.03.076.03.17v1.402c0 .094 0 .141-.03.17-.029.03-.076.03-.17.03h-1.922c-.094 0-.141 0-.17-.03-.03-.029-.03-.076-.03-.17v-1.402Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">我关注的问题</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-inviteItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/question/waiting?type=invite"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Invite GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M5.5 7.5A5.5 5.5 0 0 1 11 2a5.5 5.5 0 0 1 5.5 5.5A5.5 5.5 0 0 1 11 13a5.5 5.5 0 0 1-5.5-5.5Zm8.11 9.498c.404-.408.91-1 1.17-1.51.067-.133.13-.284.165-.442.034-.15.058-.373-.033-.602a.872.872 0 0 0-.545-.509 1.37 1.37 0 0 0-.604-.043c-.657.082-1.518.184-2.373.24-.867.055-1.68.058-2.254-.041-1.189-.204-2.045-.19-2.781.087-.722.272-1.25.773-1.804 1.302-1.533 1.462-2.434 3.311-2.65 4.831-.11.78.535 1.339 1.199 1.339h8.1a.96.96 0 0 0 .955-.929c.06-1.767.7-2.96 1.456-3.723Zm5.596-2.292a.706.706 0 0 0-1.412 0v2.588h-2.588a.706.706 0 0 0 0 1.412h2.588v2.588a.706.706 0 1 0 1.412 0v-2.588h2.588a.706.706 0 0 0 0-1.412h-2.588v-2.588Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">我的邀请</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-serviceItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/community"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Community GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M4.4 3A2.4 2.4 0 0 0 2 5.4v10.5a2.4 2.4 0 0 0 2.4 2.4h8.292l3.073 3.353a.8.8 0 0 0 1.387-.475l.24-2.878H19.6a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 19.6 3H4.4Zm2.1 4.75a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.495a.75.75 0 0 1 0 1.5H6.5a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">站务中心</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-help-centerItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/help-center"><svg width="18" height="18" viewBox="0 0 16 16" class="ZDI ZDI--HeadMicrophoneFill16 GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M8 2.763a4.376 4.376 0 0 0-4.33 3.744h.065c.861 0 1.559.697 1.559 1.558v2.595c0 .861-.698 1.559-1.559 1.559A2.485 2.485 0 0 1 1.25 9.733v-.741c0-.867.444-1.63 1.117-2.075a5.638 5.638 0 0 1 11.266 0 2.483 2.483 0 0 1 1.117 2.075v.741c0 1.19-.836 2.184-1.952 2.428a5.077 5.077 0 0 1-4.242 2.283H8a.631.631 0 0 1 0-1.263h.556c1.116 0 2.12-.478 2.818-1.241a1.557 1.557 0 0 1-.668-1.28V8.065a1.558 1.558 0 0 1 1.624-1.558A4.376 4.376 0 0 0 8 2.763Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">帮助与客服</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-copyrightItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/copyright"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Copyright GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-9.114-4.957a4.59 4.59 0 0 0-3.292.816 5 5 0 0 0-1.937 2.868 5.227 5.227 0 0 0 .333 3.483 4.865 4.865 0 0 0 2.453 2.41 4.557 4.557 0 0 0 3.384.104 4.827 4.827 0 0 0 2.583-2.26.75.75 0 0 0-1.32-.712 3.327 3.327 0 0 1-1.777 1.562c-.74.27-1.547.245-2.273-.07a3.366 3.366 0 0 1-1.692-1.672 3.727 3.727 0 0 1-.236-2.48 3.5 3.5 0 0 1 1.35-2.01 3.09 3.09 0 0 1 2.219-.553c.774.107 1.495.51 2.022 1.146a.75.75 0 0 0 1.155-.958 4.703 4.703 0 0 0-2.972-1.674Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">版权服务中心</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    
+  </div>
+
+  <script>
+     judgelogin();
+  </script>
+
+  <div class="Popover-content Popover-content--bottom AppHeaderProfileMenu-container Popover-content--fixed Popover-content--arrowed undefined Popover-content-enter-done" id="Popover15-content" aria-labelledby="Popover15-toggle" style="left: 1180px; top: 45px;">
+    <span class="Popover-arrow Popover-arrow--bottom" style="left: 109.8px; top: 0px;"></span>
+    <div class="Menu AppHeaderProfileMenu">
+      <a class="Menu-item AppHeaderProfileMenu-item css-1e76yen" href="homepage.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" class="Zi Zi--Profile" fill="currentColor"><path fill-rule="evenodd" d="M12 2.5A5.5 5.5 0 0 0 6.5 8a5.5 5.5 0 0 0 5.5 5.5A5.5 5.5 0 0 0 17.5 8 5.5 5.5 0 0 0 12 2.5ZM7.224 14.632c.68-.294 1.454-.35 2.501-.206a16.62 16.62 0 0 0 4.55 0c1.047-.144 1.821-.088 2.501.206.656.284 1.155.766 1.676 1.27 1.536 1.489 2.436 3.37 2.649 4.911.107.777-.536 1.337-1.201 1.337H4.1c-.665 0-1.308-.56-1.2-1.337.212-1.54 1.112-3.422 2.648-4.91.52-.505 1.02-.987 1.676-1.271Z" clip-rule="evenodd"></path></svg>
+        我的主页
+      </a>
+      <a class="Menu-item AppHeaderProfileMenu-item css-1e76yen" href="index.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" class="Zi Zi--Logout" fill="currentColor"><path fill-rule="evenodd" d="M13.25 3.25a1.25 1.25 0 1 0-2.5 0V11a1.25 1.25 0 1 0 2.5 0V3.25ZM4.84 13.372A7.276 7.276 0 0 1 7.735 6.36a1.25 1.25 0 0 0-1.472-2.02 9.776 9.776 0 0 0-.597 15.32 9.741 9.741 0 0 0 12.666 0 9.776 9.776 0 0 0-.597-15.32 1.25 1.25 0 0 0-1.472 2.02 7.277 7.277 0 0 1 .444 11.4 7.242 7.242 0 0 1-9.416 0 7.268 7.268 0 0 1-2.453-4.388Z" clip-rule="evenodd"></path></svg>
+        退出
+      </a>
+    </div>
+  </div> 
+  <div id="fb">
+    <div class="Modal-wrapper undefined Modal-enter-done">
+      <div class="Modal-backdrop"></div>
+      <div class="Modal Modal--large" tabindex="0">
+        <div class="Modal-inner">
+          <div class="Modal-content">
+            <form class="Ask-form" novalidate="">
+              <div style="overflow: hidden; transition: height 300ms ease-out 0s; height: 255px;">
+                <div class="Ask-items">
+                  <div class="Ask-item Ask-titleWrapper">
+                    <img class="Avatar css-kebn25" src="https://pica.zhimg.com/v2-aebef12fba1d98b60439bdb8b1a2319d_l.jpg?source=32738c0c" srcset="https://pica.zhimg.com/v2-aebef12fba1d98b60439bdb8b1a2319d_l.jpg?source=32738c0c 2x">
+                    <div class="Ask-title">
+                      <div class="AskTitle">
+                        <div class="AskTitle-text"></div>
+                        <div>
+                          <div class="Popover">
+                            <label class="AskTitle-input Input-wrapper Input-wrapper--spread Input-wrapper--multiline Input-wrapper--large">
+                              <textarea required="" rows="1" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplete59--1" id="Popover58-toggle" aria-haspopup="true" aria-owns="Popover58-content" class="Input" placeholder="写下你的标题" style="font-size: 18px;"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: right; min-height: 1.67em;">
+                        <span class="AskFieldTip"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Ask-item">
+                    <div class="AskDetail">
+                      <div class="AskDetail-actionsWrapper">
+                        <div class="AskDetail-actions">
+                          <button aria-label="展开工具栏" data-tooltip="展开工具栏" data-tooltip-position="bottom" data-tooltip-will-hide-on-click="true" type="button" class="Button Editable-control Button--plain">
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Format" fill="currentColor"><path fill-rule="evenodd" d="m15.435 13.887-3.414-9.032-3.437 9.032h6.851Zm.567 1.5 2.236 5.917a.75.75 0 0 0 1.403-.53l-6.399-16.93c-.424-1.124-2.013-1.126-2.44-.003L4.359 20.77a.75.75 0 0 0 1.402.534l2.252-5.918h7.989Z" clip-rule="evenodd"></path></svg>
+                          </button>
+                          <button aria-label="插入图片" data-tooltip="插入图片" data-tooltip-position="bottom" data-tooltip-will-hide-on-click="true" type="button" class="Button Editable-control Button--plain"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--InsertImage" fill="currentColor"><path fill-rule="evenodd" d="M3 19.4V4.6A1.6 1.6 0 0 1 4.6 3h14.8A1.6 1.6 0 0 1 21 4.6v14.8a1.6 1.6 0 0 1-1.6 1.6H4.6A1.6 1.6 0 0 1 3 19.4Zm6.009-4.637c-1.657.542-3.137 1.026-3.449 2.938-.07.436.298.799.74.799h11.4a.8.8 0 0 0 .8-.8v-6.4a.77.77 0 0 0-.802-.779c-2.756.15-3.764 1.092-4.794 2.054-.542.506-1.091 1.019-1.904 1.425-.65.325-1.335.549-1.991.763ZM7.75 10a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5Z" clip-rule="evenodd"></path></svg>
+                          </button>
+                          <button aria-label="上传视频" data-tooltip="上传视频" data-tooltip-position="bottom" data-tooltip-will-hide-on-click="true" type="button" class="Button Editable-control Button--plain"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--InsertVideo" fill="currentColor"><path fill-rule="evenodd" d="M5.062 18.742a.915.915 0 0 1-.915-.915V6.172c0-.505.41-.915.915-.915h13.875c.506 0 .915.41.915.915v11.655c0 .506-.41.915-.915.915H5.062Zm-2.415-.915a2.415 2.415 0 0 0 2.415 2.415h13.875a2.415 2.415 0 0 0 2.415-2.415V6.172a2.415 2.415 0 0 0-2.415-2.415H5.062a2.415 2.415 0 0 0-2.415 2.415v11.655Zm11.694-5.536a.347.347 0 0 0 0-.583L11.055 9.56c-.237-.155-.555.012-.555.292v4.298c0 .28.318.447.555.291l3.286-2.149Z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="AskDetail-inputWrapper">
+                        <div class="InputLike AskDetail-input Editable">
+                          <div class="Dropzone Editable-content RichText RichText--editable RichText--clearBoth ztext" style="min-height: 78px;">
+                            <div class="DraftEditor-root">
+                              <div class="public-DraftEditorPlaceholder-root">
+                                <div class="public-DraftEditorPlaceholder-inner" id="placeholder-82r9h" style="white-space: pre-wrap;">输入详细信息
+                                </div>
+                              </div>
+                              <div class="DraftEditor-editorContainer">
+                                <div aria-describedby="placeholder-82r9h" class="notranslate public-DraftEditor-content" contenteditable="true" role="textbox" spellcheck="true" tabindex="0" style="outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;">
+                                  <div data-contents="true">
+                                    <div class="Editable-unstyled" data-block="true" data-editor="82r9h" data-offset-key="8cpas-0-0">
+                                      <div data-offset-key="8cpas-0-0" class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
+                                        <span data-offset-key="8cpas-0-0"><br data-text="true"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                          </div>
+                          <input multiple="" type="file" accept="image/webp,image/jpg,image/jpeg,image/png,image/gif" style="display: none;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Ask-footer">
+                <div class="Ask-footer-buttonWrapper">
+                  <button type="button" class="Button Button--primary Button--blue">发布
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button aria-label="关闭" type="button" class="Button Modal-closeButton Button--plain" onclick="closefabu()">
+          <svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Close Modal-closeIcon" fill="currentColor"><path fill-rule="evenodd" d="M18.22 19.28a.75.75 0 1 0 1.06-1.06L13.06 12l6.22-6.22a.75.75 0 0 0-1.06-1.06L12 10.94 5.78 4.72a.75.75 0 0 0-1.06 1.06L10.94 12l-6.22 6.22a.75.75 0 1 0 1.06 1.06L12 13.06l6.22 6.22Z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

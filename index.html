@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
+    <title>者也</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+  <div>
+    <div class="LoadingBar  css-uzm3ri"></div>
+    <div>
+      <header role="banner" class="AppHeader css-1x8hcdw">
+        <div><span role="log" aria-live="assertive" style="position: absolute; top: -10000px; left: -10000px;"></span>
+        </div>
+        <div class="AppHeader-inner css-12ygoj">
+          <a href="index.html"><img src="img/logo.png" width="80px"></a>
+          <ul role="tablist" class="Tabs AppHeader-Tabs css-g0ay3v">
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink is-active css-12n8klz" tabindex="0" href="index.html">首页</a>
+            </li>
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink css-12n8klz" tabindex="0" href="index.html">学习</a>
+            </li>
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink css-12n8klz" tabindex="0" href="index.html">会员</a>
+            </li>
+            <li role="tab" class="Tabs-item AppHeader-Tab">
+              <a class="Tabs-link AppHeader-TabsLink css-12n8klz" tabindex="0" href="index.html">发现</a>
+            </li>
+          
+          </ul>
+          <div class="css-1acwmmj" id="sousuo">
+            <div class="SearchBar AppHeader-SearchBar css-10fy1q8" role="search">
+               <form class="SearchBar-tool">
+                 <div>
+                   <div class="Popover">
+                      <label class="SearchBar-input css-11bw1mm Input-wrapper Input-wrapper--grey">
+                         <input type="text" maxlength="100" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplete2--1" id="Popover1-toggle" aria-haspopup="true" aria-owns="Popover1-content" class="Input" value="">
+                         <button aria-label="搜索" type="button" class="Button SearchBar-searchButton">
+                           <span style="display: inline-flex; align-items: center;">
+                             <svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Search SearchBar-searchIcon css-1dlt5yv" fill="currentColor"><g fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 18.389c3.875 0 7-3.118 7-6.945 0-3.826-3.125-6.944-7-6.944s-7 3.118-7 6.944 3.125 6.945 7 6.945Zm0 1.5c4.694 0 8.5-3.78 8.5-8.445C20 6.781 16.194 3 11.5 3S3 6.78 3 11.444c0 4.664 3.806 8.445 8.5 8.445Z"></path><path d="M16.47 16.97a.75.75 0 0 1 1.06 0l3.5 3.5a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06Z"></path></g></svg>
+                           </span>
+                         </button>
+                      </label>
+                   </div>
+                 </div>
+               </form>
+               <button type="button" class="Button SearchBar-askButton css-3q84jd Button--primary Button--blue" onclick="fabu()">发布</button>
+            </div>
+         </div>
+          <div class="AppHeader-userInfo" id="touxiang">
+            <div class="Popover">
+              <button aria-label="通知" id="Popover5-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover5-content" type="button" class="Button AppHeader-notifications css-79elbk Button--plain">
+                <span style="display: inline-flex; align-items: center;">
+                  ​<svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Bell css-7dgah8" fill="currentColor"><path fill-rule="evenodd" d="M9.723 21.271c0-.42.34-.76.76-.76h3.043a.76.76 0 0 1 0 1.521h-3.043a.76.76 0 0 1-.76-.76Z" clip-rule="evenodd"></path><path d="M11.153 3.115c0-.618.376-1.115.844-1.115.469 0 .845.499.845 1.115v.183c3.997.369 7.012 4.117 7.024 8.515V17.468h.253a.76.76 0 1 1 0 1.521H3.891a.76.76 0 0 1 0-1.521h.253V11.813c.011-4.392 3.02-8.137 7.009-8.514v-.184Z"></path>
+                  </svg>
+                </span>
+                <div class="css-1m60na">消息</div>
+                </button>
+            </div>
+            <div class="Popover">
+              <button aria-label="私信" id="Popover6-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover6-content" type="button" class="Button AppHeader-messages css-79elbk Button--plain">
+                <span style="display: inline-flex; align-items: center;">
+                  ​<svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Comments css-7dgah8" fill="currentColor"><path fill-rule="evenodd" d="M2 11c0 1.79.553 3.45 1.498 4.82L2.6 18.667a.6.6 0 0 0 .751.753l3.07-.96A8.5 8.5 0 1 0 2 11Zm11.46 9.414c-.457.16-.506.794-.034.904A6.96 6.96 0 0 0 15 21.5c1.148 0 2.422-.31 3.444-.912.357-.217.658-.378 1.043-.252l1.414.42c.357.112.679-.168.574-.546l-.47-1.57a.736.736 0 0 1 .05-.632c.602-1.108.945-2.32.945-3.498 0-1.07-.248-2.11-.7-3.046-.21-.435-.815-.25-.872.23-.47 3.954-3.211 7.394-6.968 8.72Z" clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+                <div class="css-1m60na">私信</div>
+              </button>
+            </div>
+            <div class="AppHeader-profile">
+              <div class="Popover AppHeader-menu">
+                <button id="Popover3-toggle" aria-haspopup="true" aria-expanded="false" aria-owns="Popover3-content" type="button" class="Button AppHeader-profileEntry Button--plain" onclick="tx()">
+                  <img class="Avatar AppHeader-profileAvatar css-1tzrnvf" src="https://picx.zhimg.com/v2-d4828838906ca56e2797425e63bbcd25_l.jpg?source=32738c0c" srcset="https://picx.zhimg.com/v2-d4828838906ca56e2797425e63bbcd25_l.jpg?source=32738c0c 2x" alt="点击打开子矣的主页">
+                </button>
+              </div>   
+            </div>
+          </div>
+          <div class="AppHeader-userInfo" id="anniu">
+            <div class="AppHeader-profile">
+              <div>
+                <button type="button" class="Button css-jmxm1g" onclick="gotologin();">登录/注册</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+    </div>
+    <div>
+      <span role="log" aria-live="assertive" style="position: absolute; top: -10000px; left: -10000px;">
+      </span>
+    </div>
+    <main role="main" class="App-main">
+      <div class="Topstory">
+        <div></div>
+        <div class="Topstory-container">
+          <div class="Topstory-mainColumn">
+            <div class="Topstory-mainColumnCard">
+              <div class="Card Topstory-noMarginCard Topstory-tabCard">
+                <nav class="TopstoryTabs Topstory-tabs">
+                  <a tabindex="0" aria-controls="Topstory-recommend" class="TopstoryTabs-link Topstory-tabsLink is-active" data-za-detail-view-id="9122" data-za-extra="{&quot;button&quot;:{&quot;text&quot;:&quot;推荐&quot;}}" href="index.html">推荐</a>
+                  <a tabindex="0" aria-controls="Topstory-hot" class="TopstoryTabs-link Topstory-tabsLink" data-za-detail-view-id="9122" data-za-extra="{&quot;button&quot;:{&quot;text&quot;:&quot;热榜&quot;}}" href="hot.html">热榜</a>
+                  <a tabindex="0" aria-controls="Topstory-zvideo" class="TopstoryTabs-link Topstory-tabsLink" data-za-detail-view-id="9122" data-za-extra="{&quot;button&quot;:{&quot;text&quot;:&quot;视频&quot;}}" href="vedio.html">视频</a>
+                </nav>
+                <div>
+                  <div class="Sticky"></div>
+                </div>
+              </div>
+              <div id="TopstoryContent" class="Topstory-content">
+                <div class="ListShortcut">
+                  <div class="Topstory-recommend">
+                    <div class role="list" id="list">
+                    
+                    </div>
+                    <script>
+                      var div=document.getElementById("list");
+                      var string="";
+                      var index=0;
+                      for (var i = 0; i < localStorage.length; i++) {
+                      var key = localStorage.key(i);
+                      if(key.indexOf("header")!=-1){
+                        var header = localStorage.getItem(key);
+                        var nr=localStorage.getItem("nr_"+header);
+                        var arr=key.split("_");
+                        var user=arr[1];
+                        var time=arr[2];
+                        var flag=0;
+                        index++;
+                        var plid="plq"+index.toString();
+                        var plkid="pl"+index.toString();
+                        
+                        string+='<div class="Card TopstoryItem TopstoryItem-isRecommend" tabindex="0"><h2 class="name">'+user+':'+'</h2><h2 class="ContentItem-title">'+header+'</h2><div class="RichContent is-collapsed"><span><div class="RichContent-inner"><div class="css-79elbk"><span class="ztext css-4em6pe">'+nr+'</span></div></div></span><div class="css-dbby2p"><div class="css-82fsyv"><div class="css-12cl38p">'+time+'</div></div></div><div class="ContentItem-actions"><button type="button" class="Button ContentItem-action Button--plain Button--withIcon Button--withLabel" onclick="zhankaipl(\''+plid+'\');"><span style="display: inline-flex; align-items: center;">​<svg width="1.2em" height="1.2em" viewBox="0 0 24 24" class="Zi Zi--Comment Button-zi" fill="currentColor"><path fill-rule="evenodd" d="M12 2.75a9.25 9.25 0 1 0 4.737 17.197l2.643.817a1 1 0 0 0 1.25-1.25l-.8-2.588A9.25 9.25 0 0 0 12 2.75Z" clip-rule="evenodd"></path></svg></span>评论</button></div></div>';
+                        string+='<div style="overflow:unset;display:none;" id='+plid+'><div class="css-plbgu"><div class="css-79elbk"><div><div class="css-1fo89v5"><div class="css-x0pxoz"><div class="css-i6bazn"><div class="css-0"><div class="InputLike css-ip4bff Editable"><div class="Dropzone Editable-content RichText RichText--editable RichText--clearBoth ztext" style="min-height: 38px;"><div class="DraftEditor-root"><div class="public-DraftEditorPlaceholder-root"><div class="public-DraftEditorPlaceholder-inner" id="placeholder-bfdv9" style="white-space: pre-wrap;">写评论</div></div><div class="DraftEditor-editorContainer"><label class="AskTitle-input Input-wrapper Input-wrapper--spread Input-wrapper--multiline Input-wrapper--large"><textarea required="" rows="1" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplete59--1" id='+plkid+' aria-haspopup="true" aria-owns="Popover58-content" class="Input" placeholder="写下你的评论" style="font-size: 15px;"></textarea></label></div></div></div><div></div></div></div></div><div class="css-fybxgl"><div class="css-zkfaaw">';
+                        string+='<button type="button" class="Button css-5ef48z" onclick="plfb(\''+plkid+'\',\''+header+'\');">发布</button></div></div></div></div></div>';
+                        for(var j = 0; j < localStorage.length; j++){
+                          var _key = localStorage.key(j);
+                          if(_key.indexOf(header)!=-1&&_key.indexOf("pl")!=-1){
+                            if(flag==0){
+                            string+='<div class="css-z07uxh"><div class="css-840pn3"><div class="css-1frn93x">';
+                            flag=1;
+                            }
+                            var _nr=localStorage.getItem(_key);
+                            var _arr=_key.split("_");
+                            var _user=_arr[1];
+                            var _time=_arr[3];
+                            string+='<div><div class="css-194v73m"><div class="css-14nvvry"><div class="css-1besdh8"><div class="css-swj9d4"><div class="css-1tww9qq"><div class="css-1gomreu"><a class="css-1rd0h6f" target="_blank">'+_user+'</a></div></div></div></div><div class="css-1ygdre8">'+_nr+'</div><div class="css-dbby2p"><div class="css-82fsyv"><div class="css-12cl38p">'+_time+'</div></div></div></div></div></div></div>';
+                          }
+                        }
+
+                        
+                        string+='</div></div></div></div></div></div></div>';
+                      }
+                      }
+                      div.innerHTML=string;
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="css-1qyytj7">
+            <a aria-label="边栏锚点" aria-keyshortcuts="Shift+S" class="css-cejtq2"></a>
+            <div class="css-1oy4rvw" style="top:0"><div class="Card GlobalSideBar-category" role="complementary" aria-label="分类入口">
+              <ul class="GlobalSideBar-categoryList">
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="/lives" target="_blank" title="Live" style="color:#ffcf00" data-za-not-track-link="true" type="button" class="Button Button--plain">
+                    <span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Live" fill="currentColor"><path d="m13.693 10.354 1.634-7.542c.195-.901-.16-1.083-.798-.39l-9.18 9.97c-.638.693-.377 1.254.582 1.254h5.376l-1.634 7.542c-.195.901.16 1.083.798.39l9.18-9.97c.638-.693.377-1.254-.582-1.254h-5.376Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">Live</span>
+                  </a>
+                </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="/pub/" target="_blank" title="书店" style="color:#43d480" data-za-not-track-link="true" type="button" class="Button Button--plain">
+                      <span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Ebook" fill="currentColor"><path fill-rule="evenodd" d="M16 17.649V2.931a.92.92 0 0 0-.044-.283.943.943 0 0 0-1.183-.604L4.655 5.235A.932.932 0 0 0 4 6.122v14.947c0 .514.421.931.941.931H19.06c.52 0 .941-.417.941-.93V7.292a.936.936 0 0 0-.941-.931h-.773v12.834a.935.935 0 0 1-.83.924L6.464 21.416c-.02.002 2.94-.958 8.883-2.881a.932.932 0 0 0 .653-.886Z" clip-rule="evenodd"></path></svg></span><span class="GlobalSideBar-categoryLabel">书店</span>
+                    </a>
+                  </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="/roundtable" target="_blank" title="圆桌" style="color:#0066FF" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Org" fill="currentColor"><path d="M10.786 8.41a8.938 8.938 0 0 0-3.968-2.528c-.305-1.719.814-3.337 2.442-3.741 1.221-.405 2.646.101 3.46 1.011 1.045 1.38.915 3.64.814 4.348-.102 1.315-1.221 3.034-1.323 3.135-.305-.809-.814-1.517-1.425-2.225Zm-2.442 2.832c-1.526.202-3.052 1.01-4.171 2.123-1.12-.404-1.934-1.314-2.137-2.427-.316-2.427 1.526-3.64 2.849-3.842 1.628-.372 2.849.505 4.07 1.415 1.146 1.012 2.035 2.63 2.035 2.73-.916-.202-1.832-.1-2.646 0Zm4.986.303c.509-.607.931-1.585 1.12-2.225.318-1.039.61-3.134.203-4.651 1.323-1.011 3.154-1.011 4.477.303 1.235 1.146 1.018 2.933.814 3.438-.663 1.581-1.933 2.326-3.256 2.832-1.221.404-3.256.303-3.358.303Zm-2.645 1.011c-.51.607-.916 1.416-1.221 2.326-.407 1.314-.643 3.06-.102 4.55-1.323 1.011-3.256 1.011-4.477-.202-1.198-1.124-1.018-2.933-.814-3.438.599-1.605 1.933-2.326 3.256-2.831.916-.304 3.256-.405 3.358-.405Zm9.259-1.82c1.018.404 1.933 1.315 2.035 2.427.233 2.57-1.526 3.64-2.849 3.842-1.526 0-2.85-.505-4.07-1.415-1.018-.81-2.035-2.528-2.035-2.63.916.203 1.831.102 2.645 0 1.628-.404 3.053-1.112 4.274-2.224Zm-6.716 4.854c1.065 1.08 2.442 2.022 4.07 2.528.306 1.719-.814 3.235-2.442 3.741-1.22.404-2.645-.101-3.46-1.011-1.1-1.481-1.017-3.54-.915-4.247.102-1.315 1.221-3.034 1.323-3.135.305.708.721 1.44 1.424 2.124Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">圆桌</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="//zhuanlan.zhihu.com" target="_blank" title="专栏" style="color:#0f88eb" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Edit" fill="currentColor"><path d="m7.841 20.043-4.328 1.18a.6.6 0 0 1-.737-.736l1.18-4.324a1.2 1.2 0 0 1 .314-.539l8.094-7.995a.9.9 0 0 1 1.268.003l2.736 2.736a.9.9 0 0 1 .004 1.268l-7.196 7.296-.802.802a1.2 1.2 0 0 1-.533.31ZM19.703 4.81l-.514-.513a2.542 2.542 0 0 0-3.595 0l-.999 1.067a.9.9 0 0 0 .02 1.252l2.77 2.768a.9.9 0 0 0 1.25.02l1.068-.999a2.542 2.542 0 0 0 0-3.594Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">专栏</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="/consult" target="_blank" title="付费咨询" style="color:#5478f0" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Infinity" fill="currentColor"><path fill-rule="evenodd" d="M2 5.4A2.4 2.4 0 0 1 4.4 3h15.2A2.4 2.4 0 0 1 22 5.4v10.5a2.4 2.4 0 0 1-2.4 2.4h-2.208l-.24 2.878a.8.8 0 0 1-1.387.475L12.692 18.3H4.4A2.4 2.4 0 0 1 2 15.9V5.4Zm8.758 1.849a.75.75 0 0 0-1.115 1.003l1.607 1.786v.462h-1.5a.75.75 0 0 0 0 1.5h1.5v1.75a.75.75 0 0 0 1.5 0V12h1.5a.75.75 0 0 0 0-1.5h-1.5v-.462l1.607-1.786a.75.75 0 0 0-1.115-1.003L12 8.629l-1.242-1.38Z" clip-rule="evenodd"></path></svg></span><span class="GlobalSideBar-categoryLabel">付费咨询</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-categoryItem">
+                  <a href="/wiki" target="_blank" title="百科" style="color:#5868D1" data-za-not-track-link="true" type="button" class="Button Button--plain"><span class="GlobalSideBar-categoryIcon"><svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--KnowledgeBase" fill="currentColor"><path d="M21 9.749v9.91c0 .74-.604 1.341-1.35 1.341H4.35C3.604 21 3 20.4 3 19.659V9.319c0-.503.283-.963.733-1.193l4.892-2.5V3.341c0-.74.604-1.341 1.35-1.341.267 0 .527.078.749.225l9.675 6.408c.375.249.601.668.601 1.116ZM8.297 8.307 5.372 9.802A.223.223 0 0 0 5.25 10v8.54c0 .124.1.224.225.224h8.586a.223.223 0 0 0 .124-.41l-4.959-3.259a1.339 1.339 0 0 1-.601-1.116V8.506a.224.224 0 0 0-.328-.199Z"></path></svg></span><span class="GlobalSideBar-categoryLabel">百科</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="Card" role="complementary" aria-label="更多分类入口">
+              <ul class="GlobalSideBar-navList">
+                <li class="GlobalSideBar-navItem GlobalSideBar-starItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/collections/mine"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Star GlobalSideBar-navIcon" fill="currentColor"><path d="M10.484 3.307c.673-1.168 2.358-1.168 3.032 0l2.377 4.122a.25.25 0 0 0 .165.12l4.655.987c1.319.28 1.84 1.882.937 2.884l-3.186 3.535a.25.25 0 0 0-.063.193l.5 4.733c.142 1.34-1.222 2.33-2.453 1.782l-4.346-1.938a.25.25 0 0 0-.204 0l-4.346 1.938c-1.231.549-2.595-.442-2.453-1.782l.5-4.733a.25.25 0 0 0-.064-.193L2.35 11.42c-.903-1.002-.382-2.604.937-2.884l4.655-.987a.25.25 0 0 0 .164-.12l2.378-4.122Z"></path></svg><span class="GlobalSideBar-navText">我的收藏</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-questionListItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/people/81f67a12164bfc21f0924bc9c38ff656/following/questions"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--HelpBubble GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M5.088 1.968c.323-.044.72-.044 1.153-.044h11.518c.433 0 .83 0 1.152.044.356.047.732.16 1.04.469.31.309.422.685.47 1.04.043.323.043.72.043 1.153v13.232c0 .433 0 .83-.043 1.152-.048.356-.16.732-.47 1.04-.308.31-.684.422-1.04.47-.322.043-.72.043-1.152.043h-3.796l-3.932 2.857c-.115.084-.26.19-.397.26-.158.083-.467.207-.827.071-.359-.135-.509-.432-.573-.6-.055-.143-.094-.318-.125-.458l-.477-2.13H6.24c-.433 0-.83 0-1.153-.043-.355-.048-.73-.16-1.04-.47-.309-.308-.421-.684-.47-1.04-.042-.322-.042-.72-.042-1.152V4.63c0-.433 0-.83.043-1.153.048-.355.16-.731.47-1.04.308-.31.684-.422 1.04-.47Zm5.827 8.93c0-.095 0-.142.029-.171.03-.03.076-.03.17-.03h1.01a1.63 1.63 0 0 0 1.5-1.629 1.63 1.63 0 0 0-1.626-1.634c-.832 0-1.531.655-1.616 1.469-.011.102-.016.153-.045.178-.028.026-.075.026-.168.026H8.947c-.095 0-.142 0-.172-.031s-.027-.077-.022-.168C8.847 7.201 10.27 5.8 11.998 5.8a3.26 3.26 0 0 1 3.25 3.268 3.264 3.264 0 0 1-2.7 3.222c-.041.007-.062.01-.074.024-.012.014-.012.035-.012.076v.797c0 .094 0 .141-.029.17-.03.03-.076.03-.17.03h-1.148c-.095 0-.142 0-.171-.03-.03-.029-.03-.076-.03-.17v-2.29Zm-.31 4.05c0-.094 0-.141.03-.17.029-.03.076-.03.17-.03h1.922c.094 0 .141 0 .17.03.03.029.03.076.03.17v1.402c0 .094 0 .141-.03.17-.029.03-.076.03-.17.03h-1.922c-.094 0-.141 0-.17-.03-.03-.029-.03-.076-.03-.17v-1.402Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">我关注的问题</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-inviteItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/question/waiting?type=invite"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Invite GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M5.5 7.5A5.5 5.5 0 0 1 11 2a5.5 5.5 0 0 1 5.5 5.5A5.5 5.5 0 0 1 11 13a5.5 5.5 0 0 1-5.5-5.5Zm8.11 9.498c.404-.408.91-1 1.17-1.51.067-.133.13-.284.165-.442.034-.15.058-.373-.033-.602a.872.872 0 0 0-.545-.509 1.37 1.37 0 0 0-.604-.043c-.657.082-1.518.184-2.373.24-.867.055-1.68.058-2.254-.041-1.189-.204-2.045-.19-2.781.087-.722.272-1.25.773-1.804 1.302-1.533 1.462-2.434 3.311-2.65 4.831-.11.78.535 1.339 1.199 1.339h8.1a.96.96 0 0 0 .955-.929c.06-1.767.7-2.96 1.456-3.723Zm5.596-2.292a.706.706 0 0 0-1.412 0v2.588h-2.588a.706.706 0 0 0 0 1.412h2.588v2.588a.706.706 0 1 0 1.412 0v-2.588h2.588a.706.706 0 0 0 0-1.412h-2.588v-2.588Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">我的邀请</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-serviceItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/community"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Community GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M4.4 3A2.4 2.4 0 0 0 2 5.4v10.5a2.4 2.4 0 0 0 2.4 2.4h8.292l3.073 3.353a.8.8 0 0 0 1.387-.475l.24-2.878H19.6a2.4 2.4 0 0 0 2.4-2.4V5.4A2.4 2.4 0 0 0 19.6 3H4.4Zm2.1 4.75a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.495a.75.75 0 0 1 0 1.5H6.5a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">站务中心</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-help-centerItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/help-center"><svg width="18" height="18" viewBox="0 0 16 16" class="ZDI ZDI--HeadMicrophoneFill16 GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M8 2.763a4.376 4.376 0 0 0-4.33 3.744h.065c.861 0 1.559.697 1.559 1.558v2.595c0 .861-.698 1.559-1.559 1.559A2.485 2.485 0 0 1 1.25 9.733v-.741c0-.867.444-1.63 1.117-2.075a5.638 5.638 0 0 1 11.266 0 2.483 2.483 0 0 1 1.117 2.075v.741c0 1.19-.836 2.184-1.952 2.428a5.077 5.077 0 0 1-4.242 2.283H8a.631.631 0 0 1 0-1.263h.556c1.116 0 2.12-.478 2.818-1.241a1.557 1.557 0 0 1-.668-1.28V8.065a1.558 1.558 0 0 1 1.624-1.558A4.376 4.376 0 0 0 8 2.763Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">帮助与客服</span>
+                  </a>
+                </li>
+                <li class="GlobalSideBar-navItem GlobalSideBar-copyrightItem">
+                  <a target="_blank" data-za-not-track-link="true" type="button" class="Button GlobalSideBar-navLink Button--plain" href="/copyright"><svg width="18" height="18" viewBox="0 0 24 24" class="Zi Zi--Copyright GlobalSideBar-navIcon" fill="currentColor"><path fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-9.114-4.957a4.59 4.59 0 0 0-3.292.816 5 5 0 0 0-1.937 2.868 5.227 5.227 0 0 0 .333 3.483 4.865 4.865 0 0 0 2.453 2.41 4.557 4.557 0 0 0 3.384.104 4.827 4.827 0 0 0 2.583-2.26.75.75 0 0 0-1.32-.712 3.327 3.327 0 0 1-1.777 1.562c-.74.27-1.547.245-2.273-.07a3.366 3.366 0 0 1-1.692-1.672 3.727 3.727 0 0 1-.236-2.48 3.5 3.5 0 0 1 1.35-2.01 3.09 3.09 0 0 1 2.219-.553c.774.107 1.495.51 2.022 1.146a.75.75 0 0 0 1.155-.958 4.703 4.703 0 0 0-2.972-1.674Z" clip-rule="evenodd"></path></svg><span class="GlobalSideBar-navText">版权服务中心</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    
+  </div>
+
+  <script>
+    judgelogin();
+  </script>
+
+  <div class="Popover-content Popover-content--bottom AppHeaderProfileMenu-container Popover-content--fixed Popover-content--arrowed undefined Popover-content-enter-done" id="Popover15-content" aria-labelledby="Popover15-toggle" style="left: 1180px; top: 45px;">
+    <span class="Popover-arrow Popover-arrow--bottom" style="left: 109.8px; top: 0px;"></span>
+    <div class="Menu AppHeaderProfileMenu">
+      <a class="Menu-item AppHeaderProfileMenu-item css-1e76yen" href="homepage.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" class="Zi Zi--Profile" fill="currentColor"><path fill-rule="evenodd" d="M12 2.5A5.5 5.5 0 0 0 6.5 8a5.5 5.5 0 0 0 5.5 5.5A5.5 5.5 0 0 0 17.5 8 5.5 5.5 0 0 0 12 2.5ZM7.224 14.632c.68-.294 1.454-.35 2.501-.206a16.62 16.62 0 0 0 4.55 0c1.047-.144 1.821-.088 2.501.206.656.284 1.155.766 1.676 1.27 1.536 1.489 2.436 3.37 2.649 4.911.107.777-.536 1.337-1.201 1.337H4.1c-.665 0-1.308-.56-1.2-1.337.212-1.54 1.112-3.422 2.648-4.91.52-.505 1.02-.987 1.676-1.271Z" clip-rule="evenodd"></path></svg>
+        我的主页
+      </a>
+      <a class="Menu-item AppHeaderProfileMenu-item css-1e76yen" href="index.html" onclick="notlogin();">
+        <svg width="16" height="16" viewBox="0 0 24 24" class="Zi Zi--Logout" fill="currentColor"><path fill-rule="evenodd" d="M13.25 3.25a1.25 1.25 0 1 0-2.5 0V11a1.25 1.25 0 1 0 2.5 0V3.25ZM4.84 13.372A7.276 7.276 0 0 1 7.735 6.36a1.25 1.25 0 0 0-1.472-2.02 9.776 9.776 0 0 0-.597 15.32 9.741 9.741 0 0 0 12.666 0 9.776 9.776 0 0 0-.597-15.32 1.25 1.25 0 0 0-1.472 2.02 7.277 7.277 0 0 1 .444 11.4 7.242 7.242 0 0 1-9.416 0 7.268 7.268 0 0 1-2.453-4.388Z" clip-rule="evenodd"></path></svg>
+        退出
+      </a>
+    </div>
+  </div> 
+  <div id="fb">
+    <div class="Modal-wrapper undefined Modal-enter-done">
+      <div class="Modal-backdrop"></div>
+      <div class="Modal Modal--large" tabindex="0">
+        <div class="Modal-inner">
+          <div class="Modal-content">
+            <form class="Ask-form" novalidate="">
+              <div style="overflow: hidden; transition: height 300ms ease-out 0s; height: 80vh;">
+                <div class="Ask-items">
+                  <div class="Ask-item Ask-titleWrapper">
+                    <img class="Avatar css-kebn25" src="https://picx.zhimg.com/v2-d4828838906ca56e2797425e63bbcd25_l.jpg?source=32738c0c" srcset="https://picx.zhimg.com/v2-d4828838906ca56e2797425e63bbcd25_l.jpg?source=32738c0c 2x">
+                    <div class="Ask-title">
+                      <div class="AskTitle">
+                        <div class="AskTitle-text"></div>
+                        <div>
+                          <div class="Popover">
+                            <label class="AskTitle-input Input-wrapper Input-wrapper--spread Input-wrapper--multiline Input-wrapper--large">
+                              <textarea required="" rows="1" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplete59--1" id="fabubt" aria-haspopup="true" aria-owns="Popover58-content" class="Input" placeholder="写下你的标题" style="font-size: 18px;"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: right; min-height: 1.67em;">
+                        <span class="AskFieldTip"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 发布编辑器 -->
+                  <div id="editor—wrapper">
+                    <div id="toolbar-container"><!-- 工具栏 --></div>
+                    <div id="editor-container"><!-- 编辑器 --></div>
+                  </div>
+                </div>
+              </div>
+              <div class="Ask-footer">
+                <div class="Ask-footer-buttonWrapper">
+                  <button type="button" class="Button Button--primary Button--blue" onclick="fb();">发布</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button aria-label="关闭" type="button" class="Button Modal-closeButton Button--plain" onclick="closefabu()">
+          <svg width="24" height="24" viewBox="0 0 24 24" class="Zi Zi--Close Modal-closeIcon" fill="currentColor"><path fill-rule="evenodd" d="M18.22 19.28a.75.75 0 1 0 1.06-1.06L13.06 12l6.22-6.22a.75.75 0 0 0-1.06-1.06L12 10.94 5.78 4.72a.75.75 0 0 0-1.06 1.06L10.94 12l-6.22 6.22a.75.75 0 1 0 1.06 1.06L12 13.06l6.22 6.22Z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
