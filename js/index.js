@@ -1,12 +1,81 @@
 var islogin;
 var iszhankai=0;
 var istx=0;
-localStorage.setItem( "header_笨笨_2022-12-28 12:41:22","HTML全称");
-localStorage.setItem("nr_HTML全称","HTML的英文全称是Hyper Text Markup Language，那么它的中文全称是什么？");
-localStorage.setItem( "header_醋醋_2022-12-27 19:11:29","css全称");
-localStorage.setItem("nr_css全称","css的中文全称是什么？");
-localStorage.setItem("pl_醋醋_HTML全称_2022-12-30 15:51:10","超文本标记语言");
-localStorage.setItem("pl_笨笨_css全称_2022-12-30 16:51:12","层叠样式表");
+
+/** 默认数据 */
+localStorage.setItem("author_1704116598336","小猪");
+localStorage.setItem("header_1704116598336","小猪猪的疑问");
+
+// 初始化数据库
+let database = null;
+const request = window.indexedDB.open("database");
+
+request.onerror = (event) => {
+  console.error('indexDB err:', event);
+}
+
+request.onsuccess = (event) => {
+  database = request.result;
+  addContent(1704116598336, '<p>怎么才能减肥</p>');
+  console.log('database init success');
+}
+
+/** 数据库初始化 */
+request.onupgradeneeded = (event) => {
+  console.log('db create');
+  const db = event.target.result;
+  if (db.objectStoreNames.contains('content')) {
+    console.log('db create return');
+    return;
+  }
+  const store = db.createObjectStore('content', { keyPath: 'id' });
+  store.createIndex('id', 'id', { unique: true });
+  store.createIndex('content', 'content', { unique: false });
+  console.log('db create db');
+};
+
+/** 数据库添加 */
+function addContent(id, content) {
+  if (!database) {
+    console.log('database is not defined');
+    return;
+  }
+  const request = database.transaction(['content'], 'readwrite')
+    .objectStore('content')
+    .add({ id, content});
+
+  request.onsuccess = function (event) {
+    console.log('数据写入成功', id, content);
+  };
+
+  request.onerror = function (event) {
+    console.log('数据写入失败', event);
+  }
+}
+
+/** 数据库查找 */
+function getContent({ id, onsuccess, onerror }) {
+  if (!database) {
+    console.log('database is not defined');
+    return;
+  }
+  const objectStore = database.transaction(['content'], 'readonly').objectStore('content');
+  const request = objectStore.index('id').get(id);
+
+  request.onerror = function(event) {
+    console.log('事务失败');
+    onerror();
+  };
+
+  request.onsuccess = function(event) {
+    if (request.result) {
+      onsuccess(request.result);
+    } else {
+      onerror();
+    }
+  };
+}
+
 function judgelogin(){
     if(localStorage.getItem("loginuser")=="null"){
         document.getElementById("sousuo").style.display='none';
@@ -40,6 +109,8 @@ function tx(){
         istx=1;
     }
 }
+
+let refEditor = null;
 function fabu(){
   document.getElementById("fb").style.display='flex';
 
@@ -71,6 +142,8 @@ function fabu(){
       config: toolbarConfig,
       mode: 'default', // or 'simple'
   })
+
+  refEditor = editor;
 }
 function closefabu(){
     document.getElementById("fb").style.display='none';
@@ -89,29 +162,48 @@ function $(id){
     return document.getElementById(id);
 }
 function gettime(){
-    var timestamp=new Date().getTime();
-    var date = new Date(timestamp);
-    var Y = date.getFullYear() + '-';
-    var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
-    var D = (date.getDate() < 10 ? '0'+date.getDate() : date.getDate()) + ' ';
-    var h = (date.getHours() < 10 ? '0'+date.getHours() : date.getHours()) + ':';
-    var m = (date.getMinutes() < 10 ? '0'+date.getMinutes() : date.getMinutes()) + ':';
-    var s = (date.getSeconds() < 10 ? '0'+date.getSeconds() : date.getSeconds());
-    return Y+M+D+h+m+s;
+    return Date.now();
 }
 function fb(){
-    var bt = $("fabubt").value;
-    var nr = $("fabunr").value;
-    var user=localStorage.getItem("loginuser");
+    var bt = $("fabubt").value; //标题
+    const contentHtml = refEditor.getHtml();
+    var user=localStorage.getItem("loginuser") || '小猪';
     var time=gettime();
-    localStorage.setItem( "header_"+user+"_"+time,bt);
-    localStorage.setItem("nr_"+bt,nr);
+    localStorage.setItem("header_" + time,bt);
+    localStorage.setItem("author_" + time, user);
+    addContent(time, contentHtml);
+    // localStorage.setItem("nr_" + time, contentHtml);
     $("fabubt").value="";
-    $("fabunr").value="";
     document.getElementById("fb").style.display='none';
     alert("发布成功");
     location.reload();
 }
+
+function createQuestionCard(header, author, content) {
+  console.log('content', content);
+  return `
+    <div class='question-header'>${header}</div>
+    <div class='question-author'>${author}</div>
+    <div class='question-content'>${content}</div>
+  `;
+}
+
+function openQuestion(questionId) {
+  const questionHeader = localStorage.getItem(`header_${questionId}`);
+  const questionAuthor = localStorage.getItem(`author_${questionId}`);
+  // const questionContent = localStorage.getItem(`nr_${questionId}`);
+  const el = document.getElementById('questionDetail');
+
+  getContent({
+    id: questionId,
+    onsuccess: (questionContent) => {
+      const questionInnerEl = createQuestionCard(questionHeader, questionAuthor, questionContent);
+      el.innerHTML = questionInnerEl;
+    },
+    onerror: () => {}
+  });
+}
+
 function plfb(id,header){
     var nr = $(id).value;
     var user=localStorage.getItem("loginuser");

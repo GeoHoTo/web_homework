@@ -124,39 +124,20 @@
                       var string="";
                       var index=0;
                       for (var i = 0; i < localStorage.length; i++) {
-                      var key = localStorage.key(i);
-                      if(key.indexOf("header")!=-1){
-                        var header = localStorage.getItem(key);
-                        var nr=localStorage.getItem("nr_"+header);
-                        var arr=key.split("_");
-                        var user=arr[1];
-                        var time=arr[2];
-                        var flag=0;
-                        index++;
-                        var plid="plq"+index.toString();
-                        var plkid="pl"+index.toString();
-                        
-                        string+='<div class="Card TopstoryItem TopstoryItem-isRecommend" tabindex="0"><h2 class="name">'+user+':'+'</h2><h2 class="ContentItem-title">'+header+'</h2><div class="RichContent is-collapsed"><span><div class="RichContent-inner"><div class="css-79elbk"><span class="ztext css-4em6pe">'+nr+'</span></div></div></span><div class="css-dbby2p"><div class="css-82fsyv"><div class="css-12cl38p">'+time+'</div></div></div><div class="ContentItem-actions"><button type="button" class="Button ContentItem-action Button--plain Button--withIcon Button--withLabel" onclick="zhankaipl(\''+plid+'\');"><span style="display: inline-flex; align-items: center;">​<svg width="1.2em" height="1.2em" viewBox="0 0 24 24" class="Zi Zi--Comment Button-zi" fill="currentColor"><path fill-rule="evenodd" d="M12 2.75a9.25 9.25 0 1 0 4.737 17.197l2.643.817a1 1 0 0 0 1.25-1.25l-.8-2.588A9.25 9.25 0 0 0 12 2.75Z" clip-rule="evenodd"></path></svg></span>评论</button></div></div>';
-                        string+='<div style="overflow:unset;display:none;" id='+plid+'><div class="css-plbgu"><div class="css-79elbk"><div><div class="css-1fo89v5"><div class="css-x0pxoz"><div class="css-i6bazn"><div class="css-0"><div class="InputLike css-ip4bff Editable"><div class="Dropzone Editable-content RichText RichText--editable RichText--clearBoth ztext" style="min-height: 38px;"><div class="DraftEditor-root"><div class="public-DraftEditorPlaceholder-root"><div class="public-DraftEditorPlaceholder-inner" id="placeholder-bfdv9" style="white-space: pre-wrap;">写评论</div></div><div class="DraftEditor-editorContainer"><label class="AskTitle-input Input-wrapper Input-wrapper--spread Input-wrapper--multiline Input-wrapper--large"><textarea required="" rows="1" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="AutoComplete59--1" id='+plkid+' aria-haspopup="true" aria-owns="Popover58-content" class="Input" placeholder="写下你的评论" style="font-size: 15px;"></textarea></label></div></div></div><div></div></div></div></div><div class="css-fybxgl"><div class="css-zkfaaw">';
-                        string+='<button type="button" class="Button css-5ef48z" onclick="plfb(\''+plkid+'\',\''+header+'\');">发布</button></div></div></div></div></div>';
-                        for(var j = 0; j < localStorage.length; j++){
-                          var _key = localStorage.key(j);
-                          if(_key.indexOf(header)!=-1&&_key.indexOf("pl")!=-1){
-                            if(flag==0){
-                            string+='<div class="css-z07uxh"><div class="css-840pn3"><div class="css-1frn93x">';
-                            flag=1;
-                            }
-                            var _nr=localStorage.getItem(_key);
-                            var _arr=_key.split("_");
-                            var _user=_arr[1];
-                            var _time=_arr[3];
-                            string+='<div><div class="css-194v73m"><div class="css-14nvvry"><div class="css-1besdh8"><div class="css-swj9d4"><div class="css-1tww9qq"><div class="css-1gomreu"><a class="css-1rd0h6f" target="_blank">'+_user+'</a></div></div></div></div><div class="css-1ygdre8">'+_nr+'</div><div class="css-dbby2p"><div class="css-82fsyv"><div class="css-12cl38p">'+_time+'</div></div></div></div></div></div></div>';
-                          }
+                        var key = localStorage.key(i);
+                        if(key.indexOf("header")!=-1){
+                          var header = localStorage.getItem(key);
+                          var nr=localStorage.getItem("nr_"+header);
+                          var arr=key.split("_");
+                          var time=arr[1];
+                          var user=localStorage.getItem(`author_${time}`);
+                          var flag=0;
+                          index++;
+                          var plid="plq"+index.toString();
+                          var plkid="pl"+index.toString();
+                          // 标题部分动态渲染
+                          string+=`<div class="Card TopstoryItem TopstoryItem-isRecommend" tabindex="-1" onclick=openQuestion(${time})><h2 class="name">`+user+':'+'</h2><h2 class="ContentItem-title">'+header+'</h2></div>';
                         }
-
-                        
-                        string+='</div></div></div></div></div></div></div>';
-                      }
                       }
                       div.innerHTML=string;
                     </script>
@@ -229,6 +210,7 @@
         </div>
         </div>
       </div>
+      <div id="questionDetail" />
     </main>
     
   </div>

@@ -508,6 +508,7 @@ button {
     box-sizing: border-box;
     margin-bottom: 10px;
     overflow: hidden;
+    cursor: pointer;
 }
 .Topstory-noMarginCard {
     margin-bottom: 0!important;
@@ -650,6 +651,9 @@ button {
     margin-bottom: -4px;
     margin-top: 9px;
     overflow: hidden;
+}
+.RichContent-inner img {
+  max-width: 100px;
 }
 .css-79elbk {
     position: relative;
